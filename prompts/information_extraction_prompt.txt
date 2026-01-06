@@ -16,7 +16,7 @@ Extract these seven (7) properties from the research paper:
 	- Paper Title: The full, specific title of the individual paper, article, or chapter that is contained within the larger publication (the book or proceedings).
 	- Authors: The person(s) or group responsible for the content of the specific paper or chapter being cited.
 	- Publication Year: The year the work was made publicly available in its final, cited form
-	- DOI: This is a unique, permanent alphanumeric string that identifies a specific digital object, such as a journal article or conference paper, which is unique ID for each paper not the entire URL.
+	- DOI: This is a unique, permanent alphanumeric string that identifies a specific digital object, such as a journal article or conference paper, which is unique ID for each paper not the entire URL. Example : if URL is "https://doi.org/10.1145/2623330.2623732", the DOI is "10.1145/2623330.2623732"
 	- Editors: The person(s) responsible for compiling and organizing the larger publication (the book or proceedings). (If provided)
 	- Publisher: The entity (company, university press, or organization) legally responsible for producing and distributing the larger publication. Examples include Springer, IEEE, ACM, or Oxford University Press. (if provided)
 	- Publication: It refers to the full, official name of the journal where the article was printed. (If provided)

@@ -13,8 +13,8 @@ load_dotenv()
 
 # set up gemini
 client = genai.Client()
-model_ID = "gemini-3-pro-preview"
-# model_ID = "gemini-2.5-flash"
+# model_ID = "gemini-3-pro-preview"
+model_ID = "gemini-2.5-flash"
 
 SCHEMA = {
     "type": "object",
@@ -111,7 +111,7 @@ SCHEMA = {
 }
 
 def clean_schema(schema: dict) -> dict:
-    """Removes API-unrecognized keys from a Pydantic-generated schema."""
+    # Removes API-unrecognized keys from a Pydantic-generated schema.
     schema.pop('title', None)
     schema.pop('description', None)
 
@@ -129,9 +129,7 @@ def clean_schema(schema: dict) -> dict:
 
 
 def read_prompt(prompt_path: str):
-  """
-  Read the prompt for research paper parsing from the text file.
-  """
+    #  Read the prompt for research paper parsing from the text file.
   with open(prompt_path, "r") as f:
     return f.read()
 
@@ -145,6 +143,18 @@ def extract_text_from_pdf(pdf_path: str):
         pages.append(page.get_text("text"))
     doc.close()
     return "\n".join(pages)
+
+def clean_newlines(data):
+    if isinstance(data, dict):
+        for key, value in data.items():
+            if key in ["PaperTitle", "Publisher", "Publication"] and isinstance(value, str):
+                data[key] = value.replace("\n\n", "").replace("\u00ad", "")
+            else:
+                clean_newlines(value)
+    elif isinstance(data, list):
+        for item in data:
+            clean_newlines(item)
+    return data
 
 def processing_pdf_paper(pdf_path: str, prompt_path: str, output_path: str = None):
     #Step 1: Extract text content from the PDF
@@ -179,9 +189,7 @@ def processing_pdf_paper(pdf_path: str, prompt_path: str, output_path: str = Non
     # --- 2. Parse the JSON Response ---
     try:
         response_data = json.loads(result.text)
-        # print("\n--- Extracted Data (Preview) ---")
-        # print(json.dumps(response_data, indent=2))
-        # print("--------------------------------")
+        response_data = clean_newlines(response_data)
     except json.JSONDecodeError:
         print(f"Error: Failed to decode JSON response from Gemini: {result.text[:100]}...")
         return 
@@ -189,7 +197,7 @@ def processing_pdf_paper(pdf_path: str, prompt_path: str, output_path: str = Non
 
     # --- 3. Determine Output Path ---
     pdf_base_name = os.path.splitext(os.path.basename(pdf_path))[0]
-    output_filename = f"{pdf_base_name}_extracted_gemini_3.json"
+    output_filename = f"{pdf_base_name}_gemini.json"
     output = os.path.join(output_path, output_filename)
     os.makedirs(output_path, exist_ok=True)
 
@@ -205,9 +213,7 @@ def processing_pdf_paper(pdf_path: str, prompt_path: str, output_path: str = Non
 
 
 def count_references_in_output(output_file: str):
-    """
-    Count the number of reference objects in the output JSON file.
-    """
+    # Count the number of reference objects in the output JSON file.
     with open(output_file, "r", encoding="utf-8") as f:
         data = json.load(f)
         count = len(data["References"])
@@ -216,7 +222,7 @@ def count_references_in_output(output_file: str):
 
 
 if __name__ == "__main__":
-    pdf_path = "./papers/Survey_on_serverless_computing.pdf"
-    prompt_path = "./prompt/information_extraction_prompt.txt"
-    output_path = "./output"
+    pdf_path = "./papers/Graph_Embedding_for_Mapping_Interdisciplinary_Research_Network.pdf"
+    prompt_path = "./prompts/information_extraction_prompt.txt"
+    output_path = "./IE-output"
     processing_pdf_paper(pdf_path, prompt_path, output_path)

@@ -11,7 +11,7 @@ from functools import wraps
 
 
 # Configuration
-OUTPUT_DIR = "D:\\Masters\\Research Project\\Project\\output"
+OUTPUT_DIR = Path.cwd().parent / "IE-output"
 CROSSREF_BASE_URL = "https://api.crossref.org/works"
 SEMANTIC_SCHOLAR_BASE_URL = "https://api.semanticscholar.org/graph/v1"
 CROSSREF_BATCH_SIZE = 10  # Parallel requests for Crossref
@@ -56,7 +56,6 @@ def is_blank_doi(doi: Optional[str]) -> bool:
 # ============================================================================
 
 async def fetch_json_async(session: aiohttp.ClientSession, url: str, params: Optional[Dict] = None, timeout: int = REQUEST_TIMEOUT, retry_count: int = 0) -> Optional[Dict]:
-    """Fetch JSON from URL using async request with retry logic for rate limits"""
     headers = {"User-Agent": USER_AGENT}
     
     try:
@@ -84,7 +83,6 @@ async def fetch_json_async(session: aiohttp.ClientSession, url: str, params: Opt
 
 
 async def get_paper_info_from_crossref_async(doi: str, session: aiohttp.ClientSession) -> Optional[Dict]:
-    """Async version: Fetch paper info from Crossref"""
     url = f"{CROSSREF_BASE_URL}/{doi}"
     
     data = await fetch_json_async(session, url)
@@ -133,7 +131,6 @@ async def get_paper_info_from_crossref_async(doi: str, session: aiohttp.ClientSe
 
 
 async def fetch_multiple_papers_from_crossref(dois: List[str]) -> List[Optional[Dict]]:
-    """Fetch multiple papers from Crossref in parallel batches with rate limit awareness"""
     results = []
     
     async with aiohttp.ClientSession() as session:
@@ -157,7 +154,6 @@ async def fetch_multiple_papers_from_crossref(dois: List[str]) -> List[Optional[
 
 
 async def check_authors_list_async(doi: str, session: aiohttp.ClientSession) -> List[str]:
-    """Async version: Fetch authors from Crossref"""
     url = f"{CROSSREF_BASE_URL}/{doi}"
     
     data = await fetch_json_async(session, url)
@@ -188,7 +184,6 @@ async def check_authors_list_async(doi: str, session: aiohttp.ClientSession) -> 
 
 
 async def get_references_from_semantic_scholar_async(doi: str, session: aiohttp.ClientSession) -> List[Dict]:
-    """Async version: Fetch references from Semantic Scholar"""
     url = f"{SEMANTIC_SCHOLAR_BASE_URL}/paper/DOI:{doi}"
     params = {"fields": "references,references.title,references.authors,references.year,references.externalIds,references.venue,references.publicationVenue"}
     
@@ -236,7 +231,6 @@ async def get_references_from_semantic_scholar_async(doi: str, session: aiohttp.
 
 # callback to Sematic Socholar for References of References
 async def get_ref_of_refs_from_semantic_scholar_async(doi: str, session: aiohttp.ClientSession) -> List[Dict]:
-    """Async version: Fetch references from Semantic Scholar"""
     url = f"{SEMANTIC_SCHOLAR_BASE_URL}/paper/DOI:{doi}"
     params = {"fields": "references,references.title,references.authors,references.year,references.externalIds,references.venue,references.publicationVenue"}
     
@@ -278,7 +272,6 @@ async def get_ref_of_refs_from_semantic_scholar_async(doi: str, session: aiohttp
 
 
 async def get_references_from_crossref_async(doi: str, session: aiohttp.ClientSession) -> List[Dict]:
-    """Async version: Fetch references from Crossref"""
     url = f"{CROSSREF_BASE_URL}/{doi}"
     
     data = await fetch_json_async(session, url)
@@ -310,7 +303,6 @@ async def get_references_from_crossref_async(doi: str, session: aiohttp.ClientSe
 
 # Callback to Crossref for References of References
 async def get_ref_of_refs_from_crossref_async(doi: str, session: aiohttp.ClientSession) -> List[Dict]:
-    """Async version: Fetch references from Crossref"""
     url = f"{CROSSREF_BASE_URL}/{doi}"
     
     data = await fetch_json_async(session, url)
@@ -345,7 +337,6 @@ async def get_ref_of_refs_from_crossref_async(doi: str, session: aiohttp.ClientS
 # ============================================================================
 
 async def process_references_async(references: List[Dict]) -> List[Dict]:
-    """Process references using async parallel API calls with rate limiting"""
     enriched_references = []
     
     async with aiohttp.ClientSession() as session:
@@ -413,7 +404,6 @@ def process_save_json_file(file_path: str) -> None:
 # ============================================================================
 
 def check_authors_list(authors: Optional[List], doi: str) -> List[str]:
-    """Legacy sync version - used as fallback"""
     url = f"{CROSSREF_BASE_URL}/{doi}"
     
     try:
