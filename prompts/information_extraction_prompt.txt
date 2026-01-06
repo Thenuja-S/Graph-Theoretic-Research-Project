@@ -1,0 +1,42 @@
+Academic research paper:
+---
+{document}
+---
+
+You are an expert in analyzing scientific research papers. Please carefully read the provided research paper above and extract the following key information:
+
+Extract these seven (7) properties from the research paper:
+- Paper Title: The full title of the research paper
+- Publication Year: The year the paper was published
+- DOI: The DOI of the paper
+- Authors: The full names of the authors
+- Abstract: The full text of the paper's abstract
+- Summary Abstract: A concise summary of the abstract in 2-3 sentences, highlighting the points
+- References: A list of references in "References" section, should extract all the references in the "References" section, where each references have the following key for each reference
+	- Paper Title: The full, specific title of the individual paper, article, or chapter that is contained within the larger publication (the book or proceedings).
+	- Authors: The person(s) or group responsible for the content of the specific paper or chapter being cited.
+	- Publication Year: The year the work was made publicly available in its final, cited form
+	- DOI: This is a unique, permanent alphanumeric string that identifies a specific digital object, such as a journal article or conference paper, which is unique ID for each paper not the entire URL.
+	- Editors: The person(s) responsible for compiling and organizing the larger publication (the book or proceedings). (If provided)
+	- Publisher: The entity (company, university press, or organization) legally responsible for producing and distributing the larger publication. Examples include Springer, IEEE, ACM, or Oxford University Press. (if provided)
+	- Publication: It refers to the full, official name of the journal where the article was printed. (If provided)
+	- Semantic Information: Read the entire document and cross-referencing every instance, provide a concise summary of the cited paper, 3-5 sentences long, that highlights its main objectives, methods, and key findings.
+
+Guidelines:
+- The extracted information should be factual and accurate to the document.
+- Be extremely concise, except for the Abstract which should be copied in full.
+- The extracted entities should be self-contained and easily understood without the rest of the paper.
+- If any property is missing from the paper, please leave the field empty rather than guessing.
+- For the Summary Abstract, focus on the main objectives, methods, and key findings of the research.
+- For the References, check all the references listed in the paper in References section, and extract the information of each reference. If the DOI is missing, please leave it empty rather than guessing.
+
+Rules:
+- Keep the same number/order as the References section.
+- If DOI/year/publication missing, use "".
+- Do NOT merge or deduplicate.
+- Do NOT exculde any references.
+- Do NOT stop early. If the section is long, return as many as fit.
+- Provide full JSON including all references in a large single file.
+
+
+Answer in JSON format. The JSON should contain 7 keys: "PaperTitle", "PublicationYear", "DOI", "Authors", "Abstract", "SummaryAbstract", and "References". The "References" contain all the references in References, has subcategories "PaperTitle", "Authours", "PublicationYear", "DOI", "Editors", "Publisher", "Publication", and "SemanticInformation"

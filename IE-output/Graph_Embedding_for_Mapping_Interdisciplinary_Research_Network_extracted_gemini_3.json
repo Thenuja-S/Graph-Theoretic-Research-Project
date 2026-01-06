@@ -1,0 +1,203 @@
+{
+    "PaperTitle": "Graph Embedding for Mapping Interdisciplinary Research Networks",
+    "PublicationYear": "2023",
+    "DOI": "10.1145/3543873.3587570",
+    "Authors": [
+        "Eoghan Cunningham",
+        "Derek Greene"
+    ],
+    "Abstract": "Representation learning is the frst step in automating tasks such as research paper recommendation, classifcation, and retrieval. Due to the accelerating rate of research publication, together with the recognised benefts of interdisciplinary research, systems that facilitate researchers in discovering and understanding relevant works from beyond their immediate school of knowledge are vital. This work explores diferent methods of research paper representa\n\ntion (or document embedding), to identify those methods that are capable of preserving the interdisciplinary implications of re\n\nsearch papers in their embeddings. In addition to evaluating state of the art methods of document embedding in a interdisciplinary citation prediction task, we propose a novel Graph Neural Network architecture designed to preserve the key interdisciplinary impli\n\ncations of research articles in citation network node embeddings. Our proposed method outperforms other GNN-based methods in interdisciplinary citation prediction, without compromising overall citation prediction performance.",
+    "SummaryAbstract": "This paper addresses the challenge of discovering interdisciplinary research amidst accelerating publication rates by exploring various document embedding methods. The authors propose a novel Graph Neural Network architecture, ComBSAGE, designed to preserve the interdisciplinary implications of research articles in their embeddings. Their method outperforms other GNN-based approaches in interdisciplinary citation prediction without compromising overall performance.",
+    "References": [
+        {
+            "PaperTitle": "SciBERT: A Pretrained Language Model for Scientifc Text",
+            "Authors": "Iz Beltagy, Kyle Lo, and Arman Cohan",
+            "PublicationYear": "2019",
+            "DOI": "10.18653/v1/D19-1371",
+            "Editors": "",
+            "Publisher": "Association for Computational Linguistics",
+            "Publication": "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+            "SemanticInformation": "This paper introduces SciBERT, a BERT-based model fine-tuned on a large corpus of scientific text from Semantic Scholar. The current paper utilizes SciBERT to encode the concatenated title and abstract of research papers, generating initial document embeddings. SciBERT serves as a key component for text-based representations and is evaluated as a baseline for document embedding performance, especially when no citation relations are known."
+        },
+        {
+            "PaperTitle": "A Comprehensive Survey of Graph Embedding: Problems, Techniques, and Applications",
+            "Authors": "H. Cai, V. W. Zheng, and K. Chang",
+            "PublicationYear": "2018",
+            "DOI": "10.1109/TKDE.2018.2807452",
+            "Editors": "",
+            "Publisher": "",
+            "Publication": "IEEE Transactions on Knowl\n\nedge & Data Engineering",
+            "SemanticInformation": "This survey provides a comprehensive overview of graph embedding techniques, problems, and applications. The current paper cites it to define node embedding as the task of learning low-dimensional vector representations for graph nodes, aiming to preserve important similarities. It establishes the foundational context for the network analysis methods discussed in the paper, particularly for scientific document representation."
+        },
+        {
+            "PaperTitle": "Measuring and relieving the over-smoothing problem for graph neural networks from the topological view",
+            "Authors": "Deli Chen, Yankai Lin, Wei Li, Peng Li, Jie Zhou, and Xu Sun",
+            "PublicationYear": "2020",
+            "DOI": "",
+            "Editors": "",
+            "Publisher": "",
+            "Publication": "Proceedings of the AAAI Conference on Artifcial Intelligence",
+            "SemanticInformation": "This paper focuses on the over-smoothing problem in Graph Neural Networks, where node representations can converge and become indistinguishable from their neighbors. The current paper references it to highlight a significant challenge in GNNs, especially for interdisciplinary research papers that might act as bridges. The proposed ComBSAGE method aims to mitigate this issue by its novel message aggregation approach, preserving distinct community signals."
+        },
+        {
+            "PaperTitle": "SPECTER: Document-level Representation Learning using Citation-informed Transformers",
+            "Authors": "Arman Cohan, Sergey Feldman, Iz Beltagy, Doug Downey, and Daniel Weld",
+            "PublicationYear": "2020",
+            "DOI": "10.18653/v1/2020.acl-main.207",
+            "Editors": "",
+            "Publisher": "Association for Computational Linguistics",
+            "Publication": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+            "SemanticInformation": "SPECTER is a method that fine-tunes text-based representations using citation relations as an inter-document signal. The current paper uses SPECTER as a baseline, initializing it with SciBERT and training it to minimize distance between citing and cited papers while maximizing distance from non-cited ones. It evaluates SPECTER's ability to predict both overall and interdisciplinary citations, positioning it on the spectrum of text and citation-based methods."
+        },
+        {
+            "PaperTitle": "Assessing Network Representations for Identifying Interdisciplinarity",
+            "Authors": "Eoghan Cunningham and Derek Greene",
+            "PublicationYear": "2022",
+            "DOI": "10.1145/3487553.3524653",
+            "Editors": "",
+            "Publisher": "Association for Com\n\nputing Machinery",
+            "Publication": "Companion Proceedings of the Web Conference 2022 (Virtual Event, Lyon, France) (WWW \u201922)",
+            "SemanticInformation": "This work explores network representations for identifying interdisciplinarity and is cited to establish a relationship between certain citation graph substructures and interdisciplinary research. The current paper leverages these insights as motivation for developing ComBSAGE. It specifically aims to design a GNN architecture sensitive to local graph structure to preserve interdisciplinary implications in embeddings, building upon this prior research."
+        },
+        {
+            "PaperTitle": "The Structure of Interdisciplinary Science: Uncovering and Explaining Roles in Citation Graphs",
+            "Authors": "Eoghan Cunningham and Derek Greene",
+            "PublicationYear": "2023",
+            "DOI": "10.1007/978-3-031-21127-0_30",
+            "Editors": "",
+            "Publisher": "Springer",
+            "Publication": "Complex Networks and Their Applications XI: Proceedings of the 11th International Con\n\nference on Complex Networks and Their Applications, Vol. 1",
+            "SemanticInformation": "This paper investigates the structure of interdisciplinary science within citation graphs, focusing on uncovering and explaining specific roles. Similar to Cunningham and Greene (2022), it is cited to reinforce the understanding of the relationship between citation graph substructures and interdisciplinary research. This background directly motivates the design of the ComBSAGE method, which aims to aggregate information considering local graph structure to better represent interdisciplinary works."
+        },
+        {
+            "PaperTitle": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "Authors": "Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova",
+            "PublicationYear": "2019",
+            "DOI": "10.18653/v1/n19-1423",
+            "Editors": "Jill Burstein, Christy Doran, and Thamar Solorio",
+            "Publisher": "Association for Computa\n\ntional Linguistics",
+            "Publication": "Proceedings of the 2019 Conference of the North American Chapter of the Associa\n\ntion for Computational Linguistics: Human Language Technologies, NAACL-HLT \n\n2019, Minneapolis, MN, USA, June 2-7, 2019, Volume 1 (Long and Short Papers)",
+            "SemanticInformation": "BERT is a foundational large language model pre-trained on massive text corpora for language understanding, fine-tuned for specific tasks. This paper provides the underlying framework for SciBERT, which is a key component in the current study for generating initial text-based document embeddings. The current work utilizes the principles of BERT-based models for scientific document representation."
+        },
+        {
+            "PaperTitle": "Graph embedding techniques, applications, and performance: A survey",
+            "Authors": "Palash Goyal and Emilio Ferrara",
+            "PublicationYear": "2018",
+            "DOI": "10.1016/j.knosys.2018.03.022",
+            "Editors": "",
+            "Publisher": "",
+            "Publication": "Knowledge-Based Systems",
+            "SemanticInformation": "This survey paper provides a comprehensive review of graph embedding techniques, their applications, and performance. It is cited in the current work to provide broad context for the field of network analysis and node embedding, particularly in the discussion of learning low-dimensional vector representations for graph nodes. This supports the theoretical background of the methods explored in the paper."
+        },
+        {
+            "PaperTitle": "Inductive Representation Learning on Large Graphs",
+            "Authors": "William L. Hamilton, Rex Ying, and Jure Leskovec",
+            "PublicationYear": "2017",
+            "DOI": "",
+            "Editors": "",
+            "Publisher": "Curran Associates Inc.",
+            "Publication": "Proceedings of the 31st International Conference on Neural Information Processing Systems (Long Beach, California, USA) (NIPS\u201917)",
+            "SemanticInformation": "This paper introduces GraphSAGE, an inductive representation learning framework for large graphs. GraphSAGE, specifically with MEAN and LSTM aggregators, is utilized as a baseline Graph Neural Network method in the current study for comparison against the proposed ComBSAGE. The current work builds on the Message-Passing GNN paradigm established by methods like GraphSAGE to develop a more interdisciplinary-sensitive architecture."
+        },
+        {
+            "PaperTitle": "Variational graph auto-encoders",
+            "Authors": "Thomas N Kipf and Max Welling",
+            "PublicationYear": "2016",
+            "DOI": "",
+            "Editors": "",
+            "Publisher": "",
+            "Publication": "arXiv preprint arXiv:1611.07308",
+            "SemanticInformation": "This paper introduces Variational Graph Auto-Encoders (VGAE), a model for unsupervised learning on graph-structured data. It is cited in the current paper as an example of Message-Passing Graph Neural Networks (MP-GNNs). This provides a broader context of existing GNN architectures that can learn node embeddings based on both descriptive features and neighbor features, contributing to the background of graph representation learning techniques."
+        },
+        {
+            "PaperTitle": "Semi-Supervised Classifcation with Graph Convolutional Networks",
+            "Authors": "Thomas N. Kipf and Max Welling",
+            "PublicationYear": "2017",
+            "DOI": "",
+            "Editors": "",
+            "Publisher": "OpenReview.net",
+            "Publication": "5th International Conference on Learning Representations, ICLR 2017, Toulon, France, April 24-26, 2017, Conference Track Proceedings",
+            "SemanticInformation": "This paper presents Graph Convolutional Networks (GCNs) for semi-supervised classification on graph-structured data. It is cited as another example of Message-Passing Graph Neural Networks (MP-GNNs). This reference helps establish the array of GNN methods that leverage node features and neighbor information for learning representations, forming part of the background against which the proposed ComBSAGE method is developed and compared."
+        },
+        {
+            "PaperTitle": "Semantic and relational spaces in science of science: deep learning models for article vectorisation",
+            "Authors": "Diego Kozlowski, Jennifer Dusdal, Jun Pang, and Andreas Zilian",
+            "PublicationYear": "2021",
+            "DOI": "10.1007/s11192-021-03984-1",
+            "Editors": "",
+            "Publisher": "",
+            "Publication": "Scientometrics",
+            "SemanticInformation": "This paper explores deep learning models for article vectorization within semantic and relational spaces in the science of science. It is cited to define research paper representation learning (document embedding) as the task of discovering useful representations of scientific articles for downstream applications like classification. It also emphasizes that such representations should preserve important similarities and relations between papers, laying a theoretical groundwork for the current study."
+        },
+        {
+            "PaperTitle": "Team science",
+            "Authors": "Heidi Ledford",
+            "PublicationYear": "2015",
+            "DOI": "",
+            "Editors": "",
+            "Publisher": "",
+            "Publication": "Nature",
+            "SemanticInformation": "This article discusses the concept of 'team science.' It is referenced in the current paper to underscore the well-established benefits of interdisciplinary research. This citation helps to contextualize the motivation for the entire study, which aims to develop systems that facilitate the discovery and understanding of relevant interdisciplinary works."
+        },
+        {
+            "PaperTitle": "Efcient Estimation of Word Representations in Vector Space",
+            "Authors": "Tom\u00e1s Mikolov, Kai Chen, Greg Corrado, and Jefrey Dean",
+            "PublicationYear": "2013",
+            "DOI": "",
+            "Editors": "Yoshua Bengio and Yann LeCun",
+            "Publisher": "",
+            "Publication": "1st International Con\n\nference on Learning Representations, ICLR 2013, Scottsdale, Arizona, USA, May \n\n2-4, 2013, Workshop Track Proceedings",
+            "SemanticInformation": "This seminal paper introduces the efficient Skip-Gram model for learning word representations in vector space. The current paper cites it as the foundation for the DeepWalk method, which extends the Skip-Gram model to graphs. It explains how DeepWalk learns to predict co-occurring nodes on random walks, making it a relevant background reference for graph-based embedding techniques."
+        },
+        {
+            "PaperTitle": "DeepWalk: Online Learn\n\ning of Social Representations",
+            "Authors": "Bryan Perozzi, Rami Al-Rfou, and Steven Skiena",
+            "PublicationYear": "2014",
+            "DOI": "10.1145/2623330.2623732",
+            "Editors": "",
+            "Publisher": "Association for Computing Machinery",
+            "Publication": "Proceedings of the 20th ACM SIGKDD Interna\n\ntional Conference on Knowledge Discovery and Data Mining (New York, New York, \n\nUSA) (KDD \u201914)",
+            "SemanticInformation": "DeepWalk is an online learning method that learns social representations by extending the Skip-Gram model to random walks on graphs, preserving proximities between nodes. The current paper evaluates DeepWalk as a baseline method for paper representation, specifically one that considers only citation network information without paper content. Its performance in overall and interdisciplinary citation prediction is compared against other methods."
+        },
+        {
+            "PaperTitle": "Understanding over-squashing and \n\nbottlenecks on graphs via curvature",
+            "Authors": "Jake Topping, Francesco Di Giovanni, Benjamin Paul Chamberlain, Xiaowen \n\nDong, and Michael M. Bronstein",
+            "PublicationYear": "2022",
+            "DOI": "",
+            "Editors": "",
+            "Publisher": "OpenRe\n\nview.net",
+            "Publication": "The Tenth International Conference on \n\nLearning Representations, ICLR 2022, Virtual Event, April 25-29, 2022",
+            "SemanticInformation": "This paper investigates the phenomena of over-squashing and bottlenecks in graph neural networks from a curvature perspective, highlighting how information can be lost in such network structures. The current paper cites this work to underscore the difficulties in modeling bottleneck structures and heterophilic interactions, especially relevant for interdisciplinary research. The proposed ComBSAGE method aims to mitigate this information loss by its novel message aggregation strategy."
+        },
+        {
+            "PaperTitle": "Challenges to Interdisciplinary Discourse",
+            "Authors": "David N. Wear",
+            "PublicationYear": "1999",
+            "DOI": "",
+            "Editors": "",
+            "Publisher": "",
+            "Publication": "Ecosystems",
+            "SemanticInformation": "This article discusses the inherent challenges associated with interdisciplinary discourse, particularly the cognitive strain experienced when engaging with research outside one's primary discipline. The current paper cites this to emphasize the practical difficulties researchers face in broadly engaging with multidisciplinary works, reinforcing the necessity for systems that facilitate the discovery and recommendation of relevant interdisciplinary research."
+        },
+        {
+            "PaperTitle": "Representation learning on graphs \n\nwith jumping knowledge networks",
+            "Authors": "Keyulu Xu, Chengtao Li, Yonglong Tian, Tomohiro Sonobe, Ken-ichi \n\nKawarabayashi, and Stefanie Jegelka",
+            "PublicationYear": "2018",
+            "DOI": "",
+            "Editors": "",
+            "Publisher": "PMLR",
+            "Publication": "International Conference on Machine Learn\n\ning",
+            "SemanticInformation": "This paper introduces Jumping Knowledge (JK) networks, an architecture for representation learning on graphs that connects hidden representations from different layers. The current paper integrates a jumping knowledge connection between the hidden representations in the first and second layers of its ComBSAGE model. This design choice is justified by previous findings demonstrating its effectiveness in low-homophily networks, which are often characteristic of interdisciplinary connections."
+        },
+        {
+            "PaperTitle": "Two Sides of the \n\nSame Coin: Heterophily and Oversmoothing in Graph Convolutional Neural \n\nNetworks",
+            "Authors": "Y. Yan, M. Hashemi, K. Swersky, Y. Yang, and D. Koutra",
+            "PublicationYear": "2022",
+            "DOI": "10.1109/ICDM54844.2022.00169",
+            "Editors": "",
+            "Publisher": "IEEE \n\nComputer Society",
+            "Publication": "2022 IEEE International Conference on Data Mining (ICDM)",
+            "SemanticInformation": "This paper examines the interplay between heterophily and over-smoothing in Graph Convolutional Neural Networks, highlighting their impact on representation learning. The current paper cites this work to elaborate on the difficulties of modeling heterophilic interactions, which are prevalent in interdisciplinary research. It reinforces that these phenomena remain open challenges in GNNs and motivates the development of ComBSAGE to specifically address these limitations in the context of interdisciplinary citation networks."
+        }
+    ]
+}
