@@ -136,6 +136,22 @@ NodeID,PaperTitle,Type,Authors,PublicationYear,DOI
 10.1109/TNN.2008.2005605,The Graph Neural Network Model,ReferenceOfReference,"['F. Scarselli', 'M. Gori', 'A. Tsoi', 'M. Hagenbuchner', 'G. Monfardini']",2009,10.1109/TNN.2008.2005605
 10.1109/TPAMI.2007.12,Graph Embedding and Extensions: A General Framework for Dimensionality Reduction,ReferenceOfReference,"['Shuicheng Yan', 'Dong Xu', 'Benyu Zhang', 'HongJiang Zhang', 'Qiang Yang', 'Stephen Lin']",2007,10.1109/TPAMI.2007.12
 10.1016/S0377-2217(01)00143-6,Semidefinite programming,ReferenceOfReference,['Christoph Helmberg'],2002,10.1016/S0377-2217(01)00143-6
+10.1609/AAAI.V34I04.5747,Measuring and relieving the over-smoothing problem for graph neural networks from the topological view,Reference,"Deli Chen, Yankai Lin, Wei Li, Peng Li, Jie Zhou, and Xu Sun",2020,10.1609/AAAI.V34I04.5747
+10.24963/ijcai.2019/564,Dual Self-Paced Graph Convolutional Network: Towards Reducing Attribute Distortions Induced by Topology,ReferenceOfReference,"['Liang Yang', 'Zhiyang Chen', 'Junhua Gu', 'Yuanfang Guo']",2019,10.24963/ijcai.2019/564
+10.24963/ijcai.2019/563,Topology Optimization based Graph Convolutional Network,ReferenceOfReference,"['Liang Yang', 'Z. Kang', 'Xiaochun Cao', 'Di Jin', 'Bo Yang', 'Yuanfang Guo']",2019,10.24963/ijcai.2019/563
+10.18653/v1/P19-1479,Coherent Comments Generation for Chinese Articles with a Graph-to-Sequence Model,ReferenceOfReference,"['Wei Li', 'Jingjing Xu', 'Yancheng He', 'Shengli Yan', 'Yunfang Wu', 'Xu Sun']",2019,10.18653/v1/P19-1479
+10.1109/ICCV.2019.00936,DeepGCNs: Can GCNs Go As Deep As CNNs?,ReferenceOfReference,"['G. Li', 'Matthias Müller', 'Ali K. Thabet', 'Bernard Ghanem']",2019,10.1109/ICCV.2019.00936
+10.1609/AAAI.V34I04.5984,EvolveGCN: Evolving Graph Convolutional Networks for Dynamic Graphs,ReferenceOfReference,"['A. Pareja', 'Giacomo Domeniconi', 'Jie Chen', 'Tengfei Ma', 'T. Suzumura', 'H. Kanezashi', 'Tim Kaler', 'Charles E. Leisersen']",2019,10.1609/AAAI.V34I04.5984
+10.1016/j.patcog.2020.107637,Hypergraph Convolution and Hypergraph Attention,ReferenceOfReference,"['S. Bai', 'Feihu Zhang', 'Philip H. S. Torr']",2019,10.1016/j.patcog.2020.107637
+10.1109/TPAMI.2021.3054830,Graph Neural Networks With Convolutional ARMA Filters,ReferenceOfReference,"['F. Bianchi', 'Daniele Grattarola', 'L. Livi', 'C. Alippi']",2019,10.1109/TPAMI.2021.3054830
+10.1016/J.AIOPEN.2021.01.001,Graph Neural Networks: A Review of Methods and Applications,ReferenceOfReference,"['Jie Zhou', 'Ganqu Cui', 'Zhengyan Zhang', 'Cheng Yang', 'Zhiyuan Liu', 'Maosong Sun']",2018,10.1016/J.AIOPEN.2021.01.001
+10.1609/aaai.v33i01.33014602,Weisfeiler and Leman Go Neural: Higher-order Graph Neural Networks,ReferenceOfReference,"['Christopher Morris', 'Martin Ritzert', 'Matthias Fey', 'William L. Hamilton', 'J. E. Lenssen', 'Gaurav Rattan', 'Martin Grohe']",2018,10.1609/aaai.v33i01.33014602
+10.1609/aaai.v32i1.11604,Deeper Insights into Graph Convolutional Networks for Semi-Supervised Learning,ReferenceOfReference,"['Qimai Li', 'Zhichao Han', 'Xiao-Ming Wu']",2018,10.1609/aaai.v32i1.11604
+10.17863/CAM.48429,Graph Attention Networks,ReferenceOfReference,"['Petar Velickovic', 'Guillem Cucurull', 'Arantxa Casanova', 'Adriana Romero', 'Pietro Liò', 'Yoshua Bengio']",2017,10.17863/CAM.48429
+10.1093/bioinformatics/btx252,Predicting multicellular function through multi-layer tissue networks,ReferenceOfReference,"['M. Zitnik', 'J. Leskovec']",2017,10.1093/bioinformatics/btx252
+10.1109/CVPR.2018.00275,FeaStNet: Feature-Steered Graph Convolutions for 3D Shape Analysis,ReferenceOfReference,"['Nitika Verma', 'Edmond Boyer', 'Jakob Verbeek']",2017,10.1109/CVPR.2018.00275
+10.1145/2766462.2767755,Image-Based Recommendations on Styles and Substitutes,ReferenceOfReference,"['Julian McAuley', 'C. Targett', 'Javen Qinfeng Shi', 'Anton van den Hengel']",2015,10.1145/2766462.2767755
+10.1201/b17320-16,Collective Classification in Network Data,ReferenceOfReference,"['Prithviraj Sen', 'Galileo Namata', 'M. Bilgic', 'L. Getoor', 'Brian Gallagher', 'Tina Eliassi-Rad']",2008,10.1201/b17320-16
 10.18653/v1/2020.acl-main.207,SPECTER: Document-level Representation Learning using Citation-informed Transformers,Reference,"Arman Cohan, Sergey Feldman, Iz Beltagy, Doug Downey, and Daniel Weld",2020,10.18653/v1/2020.acl-main.207
 10.18653/v1/D19-1410,Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks,ReferenceOfReference,"['Nils Reimers', 'Iryna Gurevych']",2019,10.18653/v1/D19-1410
 10.1001/jamanetworkopen.2019.6700,Quantifying Sex Bias in Clinical Studies at Scale With Automated Data Extraction,ReferenceOfReference,"['Sergey Feldman', 'Bridger Waleed Ammar', 'Kyle Lo', 'E. Trepman', 'Madeleine van Zuylen', 'Oren Etzioni']",2019,10.1001/jamanetworkopen.2019.6700
@@ -253,7 +269,6 @@ NodeID,PaperTitle,Type,Authors,PublicationYear,DOI
 10.7551/mitpress/7503.003.0199,Stochastic Relational Models for Discriminative Link Prediction,ReferenceOfReference,"['Kai Yu', 'Wei Chu', 'Shipeng Yu', 'Volker Tresp', 'Zhao Xu']",2006,10.7551/mitpress/7503.003.0199
 10.1145/1217299.1217301,Graph evolution: Densification and shrinking diameters,ReferenceOfReference,"['J. Leskovec', 'J. Kleinberg', 'C. Faloutsos']",2006,10.1145/1217299.1217301
 10.1002/9781118548387,Applied Logistic Regression: Hosmer/Applied Logistic Regression,ReferenceOfReference,"['D. Hosmer', 'S. Lemeshow', 'Rodney X. Sturdivant']",2005,10.1002/9781118548387
-10.1109/ICPR.2000.903502,Piecewise linear skeletonization using principal curves,ReferenceOfReference,"['Balázs Kégl', 'Adam Krzyzak']",2000,10.1109/ICPR.2000.903502
 10.1002/0471602396.CH14,PRINCIPAL COMPONENT ANALYSIS AND FACTOR ANALYSIS,ReferenceOfReference,"['G. Belle', 'L. Fisher', 'P. Heagerty', 'T. Lumley']",2004,10.1002/0471602396.CH14
 10.1145/980972.980992,Overview of the 2003 KDD Cup,ReferenceOfReference,"['J. Gehrke', 'P. Ginsparg', 'J. Kleinberg']",2003,10.1145/980972.980992
 10.1145/956863.956972,The link prediction problem for social networks,ReferenceOfReference,"['David Liben-Nowell', 'Jon M. Kleinberg']",2003,10.1145/956863.956972
@@ -264,6 +279,7 @@ NodeID,PaperTitle,Type,Authors,PublicationYear,DOI
 10.1098/rspb.2001.1800,The small world of human language,ReferenceOfReference,"['R. F. Cancho', 'R. V. Solé']",2001,10.1098/rspb.2001.1800
 10.7551/mitpress/1120.003.0080,Laplacian Eigenmaps and Spectral Techniques for Embedding and Clustering,ReferenceOfReference,"['M. Belkin', 'P. Niyogi']",2001,10.7551/mitpress/1120.003.0080
 10.1126/SCIENCE.290.5500.2319,A global geometric framework for nonlinear dimensionality reduction.,ReferenceOfReference,"['J. Tenenbaum', 'V. Silva', 'John C. Langford']",2000,10.1126/SCIENCE.290.5500.2319
+10.1002/0471667196.ess1206,IEEE Transactions on Pattern Analysis and Machine Intelligence,ReferenceOfReference,['King-Sun Fu'],2004,10.1002/0471667196.ess1206
 10.1002/1097-024X(200009)30:11%3C1203::AID-SPE338%3E3.0.CO;2-N,An open graph visualization system and its applications to software engineering,ReferenceOfReference,"['E. Gansner', 'S. North']",2000,10.1002/1097-024X(200009)30:11%3C1203::AID-SPE338%3E3.0.CO;2-N
 10.1109/CVPR.1997.609407,Normalized cuts and image segmentation,ReferenceOfReference,"['Jianbo Shi', 'J. Malik']",1997,10.1109/CVPR.1997.609407
 10.1109/65.587044,The changing environment for security protocols,ReferenceOfReference,['R. Needham'],1997,10.1109/65.587044
@@ -301,12 +317,10 @@ NodeID,PaperTitle,Type,Authors,PublicationYear,DOI
 10.1007/s11192-019-03206-9,P2V: large-scale academic paper embedding,ReferenceOfReference,"['Yi Zhang', 'Fen Zhao', 'Jianguo Lu']",2019,10.1007/s11192-019-03206-9
 10.18653/v1/P19-1452,BERT Rediscovers the Classical NLP Pipeline,ReferenceOfReference,"['Ian Tenney', 'Dipanjan Das', 'Ellie Pavlick']",2019,10.18653/v1/P19-1452
 10.1109/TPAMI.2021.3081010,Graph U-Nets,ReferenceOfReference,"['Hongyang Gao', 'Shuiwang Ji']",2019,10.1109/TPAMI.2021.3081010
-10.1016/J.AIOPEN.2021.01.001,Graph Neural Networks: A Review of Methods and Applications,ReferenceOfReference,"['Jie Zhou', 'Ganqu Cui', 'Zhengyan Zhang', 'Cheng Yang', 'Zhiyuan Liu', 'Maosong Sun']",2018,10.1016/J.AIOPEN.2021.01.001
 10.1177/0003122419877135,The Geometry of Culture: Analyzing the Meanings of Class through Word Embeddings,ReferenceOfReference,"['Austin C. Kozlowski', 'Matt Taddy', 'James A. Evans']",2018,10.1177/0003122419877135
 10.1126/science.aao0185,Science of Science,ReferenceOfReference,"['S. Fortunato', 'Carl T. Bergstrom', 'K. Börner', 'James A. Evans', 'D. Helbing', 'Stasa Milojevic', 'A. Petersen', 'F. Radicchi', 'R. Sinatra', 'Brian Uzzi', 'Alessandro Vespignani', 'L. Waltman', 'Dashun Wang', 'A. Barabási']",2018,10.1126/science.aao0185
 10.1080/00031305.2017.1375989,Data Organization in Spreadsheets,ReferenceOfReference,"['K. Broman', 'Kara H. Woo']",2018,10.1080/00031305.2017.1375989
 10.1073/pnas.1720347115,Word embeddings quantify 100 years of gender and ethnic stereotypes,ReferenceOfReference,"['Nikhil Garg', 'L. Schiebinger', 'Dan Jurafsky', 'James Y. Zou']",2017,10.1073/pnas.1720347115
-10.17863/CAM.48429,Graph Attention Networks,ReferenceOfReference,"['Petar Velickovic', 'Guillem Cucurull', 'Arantxa Casanova', 'Adriana Romero', 'Pietro Liò', 'Yoshua Bengio']",2017,10.17863/CAM.48429
 10.1126/science.aal4230,Semantics derived automatically from language corpora contain human-like biases,ReferenceOfReference,"['Aylin Caliskan', 'J. Bryson', 'Arvind Narayanan']",2016,10.1126/science.aal4230
 10.1098/rsta.2012.0375,Network science,ReferenceOfReference,['A. Barabási'],2016,10.1098/rsta.2012.0375
 10.1016/j.joi.2015.10.005,Quantifying the cognitive extent of science,ReferenceOfReference,['Stasa Milojevic'],2015,10.1016/j.joi.2015.10.005
@@ -354,7 +368,6 @@ NodeID,PaperTitle,Type,Authors,PublicationYear,DOI
 10.5555/1756006.1756025,Why Does Unsupervised Pre-training Help Deep Learning?,ReferenceOfReference,"['D. Erhan', 'Aaron C. Courville', 'Yoshua Bengio', 'Pascal Vincent']",2010,10.5555/1756006.1756025
 10.1145/1541880.1541882,Anomaly detection: A survey,ReferenceOfReference,"['V. Chandola', 'A. Banerjee', 'Vipin Kumar']",2009,10.1145/1541880.1541882
 10.1007/s10994-008-5066-6,A bias/variance decomposition for models using collective inference,ReferenceOfReference,"['Jennifer Neville', 'David D. Jensen']",2008,10.1007/s10994-008-5066-6
-10.1201/b17320-16,Collective Classification in Network Data,ReferenceOfReference,"['Prithviraj Sen', 'Galileo Namata', 'M. Bilgic', 'L. Getoor', 'Brian Gallagher', 'Tina Eliassi-Rad']",2008,10.1201/b17320-16
 10.1007/978-3-642-14929-0_1,Leveraging Label-Independent Features for Classification in Sparsely Labeled Networks: An Empirical Study,ReferenceOfReference,"['Brian Gallagher', 'Tina Eliassi-Rad']",2008,10.1007/978-3-642-14929-0_1
 10.1145/1401890.1401925,Using ghost edges for classification in sparsely labeled networks,ReferenceOfReference,"['Brian Gallagher', 'Hanghang Tong', 'Tina Eliassi-Rad', 'C. Faloutsos']",2008,10.1145/1401890.1401925
 10.5555/1390681.1442794,LIBLINEAR: A Library for Large Linear Classification,ReferenceOfReference,"['Rong-En Fan', 'Kai-Wei Chang', 'Cho-Jui Hsieh', 'Xiang-Rui Wang', 'Chih-Jen Lin']",2008,10.5555/1390681.1442794
@@ -369,11 +382,7 @@ NodeID,PaperTitle,Type,Authors,PublicationYear,DOI
 10.1137/1.9781611972825.71,Fast Random Walk Graph Kernel,ReferenceOfReference,"['U. Kang', 'Hanghang Tong', 'I. Watson', 'Jimeng Sun']",2012,10.1137/1.9781611972825.71
 10.7551/mitpress/7432.001.0001,Introduction to Statistical Relational Learning,ReferenceOfReference,"['Charles Sutton', 'A. McCallum']",2007,10.7551/mitpress/7432.001.0001
 10.21236/ada452802,A Simple Relational Classifier,ReferenceOfReference,"['Sofus A. Macskassy', 'F. Provost']",2003,10.21236/ada452802
-10.1109/ICDM54844.2022.00169,"Two Sides of the 
-
-Same Coin: Heterophily and Oversmoothing in Graph Convolutional Neural 
-
-Networks",Reference,"Y. Yan, M. Hashemi, K. Swersky, Y. Yang, and D. Koutra",2022,10.1109/ICDM54844.2022.00169
+10.1109/ICDM54844.2022.00169,Two Sides of the Same Coin: Heterophily and Oversmoothing in Graph Convolutional Neural Networks,Reference,"Y. Yan, M. Hashemi, K. Swersky, Y. Yang, and D. Koutra",2022,10.1109/ICDM54844.2022.00169
 10.1109/icassp43922.2022.9747635,Memory-Based Message Passing: Decoupling the Message for Propagation from Discrimination,ReferenceOfReference,"['Jie Chen', 'Weiqi Liu', 'Jianghuai Pu']",2022,10.1109/icassp43922.2022.9747635
 10.1145/3534678.3539418,How does Heterophily Impact the Robustness of Graph Neural Networks?: Theoretical Connections and Practical Implications,ReferenceOfReference,"['Jiong Zhu', 'Junchen Jin', 'Donald Loveland', 'Michael T. Schaub', 'Danai Koutra']",2021,10.1145/3534678.3539418
 10.1609/aaai.v35i5.16514,Beyond Low-frequency Information in Graph Convolutional Networks,ReferenceOfReference,"['Deyu Bo', 'Xiao Wang', 'C. Shi', 'Huawei Shen']",2021,10.1609/aaai.v35i5.16514
@@ -381,11 +390,8 @@ Networks",Reference,"Y. Yan, M. Hashemi, K. Swersky, Y. Yang, and D. Koutra",202
 10.1145/3459637.3482488,Understanding and Resolving Performance Degradation in Deep Graph Convolutional Networks,ReferenceOfReference,"['Kuangqi Zhou', 'Yanfei Dong', 'Kaixin Wang', 'W. Lee', 'Bryan Hooi', 'Huan Xu', 'Jiashi Feng']",2020,10.1145/3459637.3482488
 10.1109/TPAMI.2021.3134200,Non-Local Graph Neural Networks,ReferenceOfReference,"['Meng Liu', 'Zhengyang Wang', 'Shuiwang Ji']",2020,10.1109/TPAMI.2021.3134200
 10.1093/comnet/cnab014,Multi-scale Attributed Node Embedding,ReferenceOfReference,"['Benedek Rozemberczki', 'Carl Allen', 'Rik Sarkar']",2019,10.1093/comnet/cnab014
-10.1609/AAAI.V34I04.5747,Measuring and Relieving the Over-smoothing Problem for Graph Neural Networks from the Topological View,ReferenceOfReference,"['Deli Chen', 'Yankai Lin', 'Wei Li', 'Peng Li', 'Jie Zhou', 'Xu Sun']",2019,10.1609/AAAI.V34I04.5747
 10.1145/3292500.3330921,"GroupINN: Grouping-based Interpretable Neural Network for Classification of Limited, Noisy Brain Data",ReferenceOfReference,"['Yujun Yan', 'Jiong Zhu', 'M. Duda', 'Eric Solarz', 'C. Sripada', 'Danai Koutra']",2019,10.1145/3292500.3330921
 10.18653/v1/P19-1247,Encoding Social Information with Graph Convolutional Networks forPolitical Perspective Detection in News Media,ReferenceOfReference,"['Chang Li', 'Dan Goldwasser']",2019,10.18653/v1/P19-1247
-10.1109/ICCV.2019.00936,DeepGCNs: Can GCNs Go As Deep As CNNs?,ReferenceOfReference,"['G. Li', 'Matthias Müller', 'Ali K. Thabet', 'Bernard Ghanem']",2019,10.1109/ICCV.2019.00936
-10.1609/aaai.v32i1.11604,Deeper Insights into Graph Convolutional Networks for Semi-Supervised Learning,ReferenceOfReference,"['Qimai Li', 'Zhichao Han', 'Xiao-Ming Wu']",2018,10.1609/aaai.v32i1.11604
 10.14778/2735479.2735490,Linearized and Single-Pass Belief Propagation,ReferenceOfReference,"['Wolfgang Gatterbauer', 'Stephan Günnemann', 'Danai Koutra', 'C. Faloutsos']",2014,10.14778/2735479.2735490
 10.1145/1557019.1557108,Social influence analysis in large-scale networks,ReferenceOfReference,"['Jie Tang', 'Jimeng Sun', 'Chi Wang', 'Zi Yang']",2009,10.1145/1557019.1557108
 10.1145/1242572.1242600,Netprobe: a fast and scalable system for fraud detection in online auction networks,ReferenceOfReference,"['Shashank Pandit', 'Duen Horng Chau', 'Samuel Wang', 'Christos Faloutsos']",2007,10.1145/1242572.1242600

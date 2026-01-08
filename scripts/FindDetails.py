@@ -12,6 +12,7 @@ from functools import wraps
 
 # Configuration
 OUTPUT_DIR = Path.cwd().parent / "IE-output"
+JSON_OUTPUT_DIR = Path.cwd().parent / "JSON-output"
 CROSSREF_BASE_URL = "https://api.crossref.org/works"
 SEMANTIC_SCHOLAR_BASE_URL = "https://api.semanticscholar.org/graph/v1"
 CROSSREF_BATCH_SIZE = 10  # Parallel requests for Crossref
@@ -389,7 +390,8 @@ def process_save_json_file(file_path: str) -> None:
             print(f"\n No data to save for file {file_path}")
             return
         # Save the updated JSON file
-        output_path = file_path.replace('.json', '_enriched.json')
+        # output_path = file_path.replace('.json', '_enriched.json')
+        output_path = os.path.join(JSON_OUTPUT_DIR, file_path.split(os.sep)[-1].replace('.json', '_enriched.json'))
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=4, ensure_ascii=False)
         
