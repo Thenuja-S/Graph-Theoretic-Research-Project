@@ -23,6 +23,21 @@ RETRY_DELAY = 5.0  # seconds to wait before retrying on 429
 MAX_RETRIES = 3  # Maximum retry attempts for rate-limited requests
 USER_AGENT = "Research-Metadata-Tool/1.0 (mailto:research@example.com)"
 
+def clean_abstract(abstract: str) -> str:
+    """Remove JATS XML tags and clean up abstract text."""
+    if not abstract or not isinstance(abstract, str):
+        return ""
+    
+    import re
+    # Remove JATS XML tags like <jats:p>, <jats:italic>, etc.
+    clean_text = re.sub(r'<jats:[^>]+>', '', abstract)
+    clean_text = re.sub(r'</jats:[^>]+>', '', clean_text)
+    # Remove any remaining HTML/XML tags
+    clean_text = re.sub(r'<[^>]+>', '', clean_text)
+    # Clean up extra whitespace
+    clean_text = re.sub(r'\s+', ' ', clean_text)
+    return clean_text.strip()
+
 def safe_first_str(seq: Optional[List], default: str = "") -> str:
     if not seq or not isinstance(seq, list):
         return default
@@ -116,6 +131,14 @@ async def get_paper_info_from_crossref_async(doi: str, session: aiohttp.ClientSe
             
             # Extract publisher
             publisher = msg.get('publisher', '')
+
+            # Get Abstract if available
+            abstract = msg.get('abstract', '')
+
+            if abstract is None:    
+                abstract = ""
+            else:
+                abstract = clean_abstract(abstract)
             
             return {
                 "PaperTitle": title,
@@ -123,7 +146,8 @@ async def get_paper_info_from_crossref_async(doi: str, session: aiohttp.ClientSe
                 "PublicationYear": pub_year,
                 "DOI": doi,
                 "Publisher": publisher,
-                "Publication": publication
+                "Publication": publication,
+                "Abstract": abstract
             }
         return None
     except Exception as e:
@@ -186,7 +210,8 @@ async def check_authors_list_async(doi: str, session: aiohttp.ClientSession) -> 
 
 async def get_references_from_semantic_scholar_async(doi: str, session: aiohttp.ClientSession) -> List[Dict]:
     url = f"{SEMANTIC_SCHOLAR_BASE_URL}/paper/DOI:{doi}"
-    params = {"fields": "references,references.title,references.authors,references.year,references.externalIds,references.venue,references.publicationVenue"}
+    params = {"fields": "references,references.title,references.authors,references.year,references.externalIds,"
+    "references.venue,references.publicationVenue,references.abstract"}
     
     data = await fetch_json_async(session, url, params=params)
     if not data:
@@ -199,13 +224,21 @@ async def get_references_from_semantic_scholar_async(doi: str, session: aiohttp.
         if references_raw:
             references = []
             for ref in references_raw:
+                abstract = ref.get('abstract', '')
+
+                if abstract is None:
+                    abstract = ""
+                else:
+                    abstract = clean_abstract(abstract)
+
                 ref_info = {
                     "PaperTitle": ref.get('title', ''),
                     "Authors": [author.get('name', '') for author in ref.get('authors', [])] if ref.get('authors') else [],
                     "PublicationYear": str(ref.get('year')) if ref.get('year') else "",
                     "DOI": ref.get('externalIds', {}).get('DOI') if ref.get('externalIds') else "",
                     "Publication": ref.get('venue', ''),
-                    "Publisher": ref.get('publicationVenue', {}).get('name') if ref.get('publicationVenue') else "",      
+                    "Publisher": ref.get('publicationVenue', {}).get('name') if ref.get('publicationVenue') else "",
+                    "Abstract": abstract,      
                 }
                 
                 if not is_blank_doi(ref_info["DOI"]):
@@ -233,7 +266,8 @@ async def get_references_from_semantic_scholar_async(doi: str, session: aiohttp.
 # callback to Sematic Socholar for References of References
 async def get_ref_of_refs_from_semantic_scholar_async(doi: str, session: aiohttp.ClientSession) -> List[Dict]:
     url = f"{SEMANTIC_SCHOLAR_BASE_URL}/paper/DOI:{doi}"
-    params = {"fields": "references,references.title,references.authors,references.year,references.externalIds,references.venue,references.publicationVenue"}
+    params = {"fields": "references,references.title,references.authors,references.year,"
+    "references.externalIds,references.venue,references.publicationVenue,references.abstract"}
     
     data = await fetch_json_async(session, url, params=params)
     if not data:
@@ -246,6 +280,13 @@ async def get_ref_of_refs_from_semantic_scholar_async(doi: str, session: aiohttp
         if references_raw:
             references = []
             for ref in references_raw:
+                abstract = ref.get('abstract', '')
+
+                if abstract is None:
+                    abstract = ""
+                else:
+                    abstract = clean_abstract(abstract)
+        
                 ref_info = {
                     "PaperTitle": ref.get('title', ''),
                     "Authors": [author.get('name', '') for author in ref.get('authors', [])] if ref.get('authors') else [],
@@ -253,6 +294,7 @@ async def get_ref_of_refs_from_semantic_scholar_async(doi: str, session: aiohttp
                     "DOI": ref.get('externalIds', {}).get('DOI') if ref.get('externalIds') else "",
                     "Publication": ref.get('venue', ''),
                     "Publisher": ref.get('publicationVenue', {}).get('name') if ref.get('publicationVenue') else "",      
+                    "Abstract": abstract
                 }
                 
                 if not is_blank_doi(ref_info["DOI"]):
@@ -349,7 +391,7 @@ async def process_references_async(references: List[Dict]) -> List[Dict]:
             if not doi or doi.strip() == "":
                 print("   Skipping reference with blank DOI.")
                 continue
-            
+            ref['Abstract'] = await get_abstract_semantic_scholar_async(doi, session)
             ref["References"] = await get_references_from_semantic_scholar_async(doi, session)
             enriched_references.append(ref)
             
@@ -437,7 +479,51 @@ def check_authors_list(authors: Optional[List], doi: str) -> List[str]:
     except Exception as e:
         print(f"  -> Error fetching DOI {doi}: {e}")
         return []
+    
+# Get abstract using crossref if available (async)
+async def get_abstract_cross_ref_async(doi: str, session: aiohttp.ClientSession) -> str:
+    url = f"{CROSSREF_BASE_URL}/{doi}"
+    
+    data = await fetch_json_async(session, url)
+    if not data:
+        return ""
+    
+    try:
+        if data.get('status') == 'ok' and 'message' in data:
+            msg = data['message']
+            abstract = msg.get('abstract', '')
 
+            if abstract is None:
+                return ""
+        
+            return clean_abstract(abstract)
+        else:
+            return ""
+            
+    except Exception as e:
+        print(f"  -> Error fetching abstract for DOI {doi}: {e}")
+        return ""   
+        
+# Get abstract using semantic scholar if available (async)
+async def get_abstract_semantic_scholar_async(doi: str, session: aiohttp.ClientSession) -> str:
+    url = f"{SEMANTIC_SCHOLAR_BASE_URL}/paper/DOI:{doi}"
+    params = {"fields": "abstract"}
+    
+    data = await fetch_json_async(session, url, params=params)
+    if not data:
+        return await get_abstract_cross_ref_async(doi, session)
+    
+    try:
+        abstract = data.get('abstract', '')
+        if abstract is None:
+            return ""
+        
+        return clean_abstract(abstract)
+    
+    except Exception as e:
+        print(f"    -> Error fetching from Semantic Scholar: {e}")
+        return await get_abstract_cross_ref_async(doi, session)
+    
 def main():
 
     # Check if output directory exists

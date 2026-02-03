@@ -39,6 +39,7 @@ def create_graph(data: dict):
         "Authors": ", ".join(data.get("Authors", [])),
         "PublicationYear": seed_year,
         "DOI": seed_doi,
+        "Abstract": data.get("Abstract", ""),
     })
 
     # Level 1 references
@@ -57,6 +58,7 @@ def create_graph(data: dict):
             "Authors": ref.get("Authors", ""),
             "PublicationYear": ref_year,
             "DOI": ref_doi,
+            "Abstract": ref.get("Abstract", ""),
         })
 
         edges.append({
@@ -82,6 +84,7 @@ def create_graph(data: dict):
                 "Authors": r2.get("Authors", ""),
                 "PublicationYear": r2_year,
                 "DOI": r2_doi,
+                "Abstract": r2.get("Abstract", ""),
             })
 
             edges.append({
