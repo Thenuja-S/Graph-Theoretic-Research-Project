@@ -14,6 +14,93 @@ def read_json_data(file_name: str):
         return json.load(f)
 
 
+def clean_json_data_by_doi(data: dict) -> dict:
+    """
+    Process JSON data to consolidate information by DOI.
+    
+    For each DOI that appears multiple times in the data:
+    - If any occurrence has an abstract, use it for all occurrences
+    - If any occurrence has a paper title, use it for all occurrences
+    
+    Args:
+        data: The JSON data structure containing papers and references
+    
+    Returns:
+        Cleaned JSON data with consolidated information by DOI
+    """
+    # Step 1: Collect all papers from all levels and build a DOI index
+    doi_index = {}
+    
+    def collect_papers(paper, level=0):
+        """Recursively collect all papers and store best available data for each DOI"""
+        doi = (paper.get("DOI") or "").strip()
+        if not doi:
+            return
+        
+        # Initialize entry if not exists
+        if doi not in doi_index:
+            doi_index[doi] = {
+                "PaperTitle": "",
+                "Abstract": "",
+                "Authors": "",
+                "PublicationYear": "",
+            }
+        
+        # Update with non-empty values (prefer longer abstracts and titles)
+        current_title = (paper.get("PaperTitle") or "").strip()
+        current_abstract = (paper.get("Abstract") or "").strip()
+        current_authors = paper.get("Authors", "")
+        current_year = paper.get("PublicationYear", "")
+        
+        # Use the longest non-empty title
+        if current_title and len(current_title) > len(doi_index[doi]["PaperTitle"]):
+            doi_index[doi]["PaperTitle"] = current_title
+        
+        # Use the longest non-empty abstract
+        if current_abstract and len(current_abstract) > len(doi_index[doi]["Abstract"]):
+            doi_index[doi]["Abstract"] = current_abstract
+        
+        # Use non-empty authors
+        if current_authors and not doi_index[doi]["Authors"]:
+            doi_index[doi]["Authors"] = current_authors
+        
+        # Use non-empty publication year
+        if current_year and not doi_index[doi]["PublicationYear"]:
+            doi_index[doi]["PublicationYear"] = current_year
+        
+        # Recursively process references
+        for ref in paper.get("References", []):
+            collect_papers(ref, level + 1)
+    
+    # Step 2: Build the DOI index from the entire tree
+    collect_papers(data)
+    
+    # Step 3: Apply the consolidated data back to all papers
+    def apply_consolidated_data(paper):
+        """Recursively apply consolidated data to all papers"""
+        doi = (paper.get("DOI") or "").strip()
+        if doi and doi in doi_index:
+            # Update with consolidated data
+            if doi_index[doi]["PaperTitle"]:
+                paper["PaperTitle"] = doi_index[doi]["PaperTitle"]
+            if doi_index[doi]["Abstract"]:
+                paper["Abstract"] = doi_index[doi]["Abstract"]
+            if doi_index[doi]["Authors"]:
+                paper["Authors"] = doi_index[doi]["Authors"]
+            if doi_index[doi]["PublicationYear"]:
+                paper["PublicationYear"] = doi_index[doi]["PublicationYear"]
+        
+        # Recursively process references
+        if "References" in paper:
+            for ref in paper["References"]:
+                apply_consolidated_data(ref)
+        
+        return paper
+    
+    # Step 4: Return cleaned data
+    return apply_consolidated_data(data)
+
+
 def _valid_node(title: str, doi: str) -> bool:
     # Return True when both title and doi are non-empty strings
     return bool(title and title.strip()) and bool(doi and doi.strip())
@@ -94,12 +181,44 @@ def create_graph(data: dict):
                 "PublicationYear": r2_year,
             })
 
+            # Level 3: references of references of references
+            for r3 in r2.get("References", []):
+                r3_title = (r3.get("PaperTitle") or "").strip()
+                r3_doi = (r3.get("DOI") or "").strip()
+                r3_year = r3.get("PublicationYear", "")
+                if not _valid_node(r3_title, r3_doi):
+                    continue
+
+                nodes.append({
+                    "NodeID": r3_doi,
+                    "PaperTitle": r3_title,
+                    "Type": "ReferenceOfReferenceOfReference",
+                    "Authors": r3.get("Authors", ""),
+                    "PublicationYear": r3_year,
+                    "DOI": r3_doi,
+                    "Abstract": r3.get("Abstract", ""),
+                })
+
+                edges.append({
+                    "Source": r2_doi,
+                    "Target": r3_doi,
+                    "Relationship": "CITES",
+                    "PublicationYear": r3_year,
+                })
+
     return nodes, edges
 
 
 def main():
+    # Load raw data
     data = read_json_data(INPUT_FILE_NAME)
-    nodes, edges = create_graph(data)
+    
+    # Clean and consolidate data by DOI
+    print("Cleaning and consolidating data by DOI...")
+    cleaned_data = clean_json_data_by_doi(data)
+    
+    # Create graph from cleaned data
+    nodes, edges = create_graph(cleaned_data)
 
     pd.DataFrame(nodes).drop_duplicates(subset=["NodeID"]).to_csv(OUTPUT_NODES_FILE, index=False)
     pd.DataFrame(edges).to_csv(OUTPUT_EDGES_FILE, index=False)

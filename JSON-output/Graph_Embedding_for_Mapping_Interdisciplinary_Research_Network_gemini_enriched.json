@@ -4498,7 +4498,7 @@
                         {
                             "PaperTitle": "ExaCT: automatic extraction of clinical trial characteristics from journal publications",
                             "Authors": [
-                                "S. Kiritchenko",
+                                "Svetlana Kiritchenko",
                                 "Berry de Bruijn",
                                 "Simona Carini",
                                 "Joel D. Martin",
@@ -5668,7 +5668,7 @@
                                 "Wang Ling",
                                 "Chris Dyer",
                                 "A. Black",
-                                "I. Trancoso",
+                                "Isabel Trancoso",
                                 "Ramón Fernández Astudillo",
                                 "Silvio Amir",
                                 "Luís Marujo",
@@ -7323,7 +7323,7 @@
                                 "Wang Ling",
                                 "Chris Dyer",
                                 "A. Black",
-                                "I. Trancoso",
+                                "Isabel Trancoso",
                                 "Ramón Fernández Astudillo",
                                 "Silvio Amir",
                                 "Luís Marujo",
@@ -8106,7 +8106,7 @@
                                 "C. O’Donovan",
                                 "M. Martin",
                                 "B. Bely",
-                                "Paul Browne",
+                                "P. Browne",
                                 "Wei Mun Chan",
                                 "R. Y. Eberhardt",
                                 "M. Gardner",
@@ -8286,7 +8286,7 @@
                                 "M. Bingley",
                                 "David Binns",
                                 "Lawrence Bower",
-                                "Paul Browne",
+                                "P. Browne",
                                 "Chan Wm",
                                 "E. Dimmer",
                                 "R. Y. Eberhardt",
@@ -10645,7 +10645,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Relational retrieval using a combination of path-constrained random walks",
+                            "PaperTitle": "Relational retrieval using a combination of path-constrained random walks",
                             "Authors": [
                                 "Ni Lao",
                                 "William W. Cohen"
@@ -10745,7 +10745,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "<i>struc2vec</i>",
+                            "PaperTitle": "struc2vec",
                             "Authors": [
                                 "Leonardo F.R. Ribeiro",
                                 "Pedro H.P. Saverese",
@@ -11787,7 +11787,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Relational retrieval using a combination of path-constrained random walks",
+                            "PaperTitle": "Relational retrieval using a combination of path-constrained random walks",
                             "Authors": [
                                 "Ni Lao",
                                 "William W. Cohen"
@@ -12826,7 +12826,7 @@
                             "Abstract": "LIBSVM is a library for Support Vector Machines (SVMs). We have been actively developing this package since the year 2000. The goal is to help users to easily apply SVM to their applications. LIBSVM has gained wide popularity in machine learning and many other areas. In this article, we present all implementation details of LIBSVM. Issues such as solving SVM optimization problems theoretical convergence multiclass classification probability estimates and parameter selection are discussed in detail."
                         },
                         {
-                            "PaperTitle": "Maximum Likelihood from Incomplete Data Via the\n                    <i>EM</i>\n                    Algorithm",
+                            "PaperTitle": "Maximum Likelihood from Incomplete Data Via the EM Algorithm",
                             "Authors": [
                                 "A. P. Dempster",
                                 "N. M. Laird",
@@ -17197,7 +17197,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "On the Best Rank-1 and Rank-(<i>R</i><sub>1</sub> ,<i>R</i><sub>2</sub> ,. . .,<i>R<sub>N</sub></i>) Approximation of Higher-Order Tensors",
+                            "PaperTitle": "On the Best Rank-1 and Rank-(R1 ,R2 ,. . .,RN) Approximation of Higher-Order Tensors",
                             "Authors": [
                                 "Lieven De Lathauwer",
                                 "Bart De Moor",
@@ -17629,7 +17629,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Improving Distributional Similarity with Lessons Learned from Word                     Embeddings",
+                            "PaperTitle": "Improving Distributional Similarity with Lessons Learned from Word Embeddings",
                             "Authors": [
                                 "Omer Levy",
                                 "Yoav Goldberg",
@@ -18777,14 +18777,12 @@
                         {
                             "PaperTitle": "Social Science",
                             "Authors": [
-                                "Saqfa Jadoon",
-                                "Dr Muhammad Rizwan",
-                                "Sadaf Butt"
+                                "Abrar Ahmad"
                             ],
                             "PublicationYear": "2021",
-                            "DOI": "10.1038/136409a0",
-                            "Publication": "Nature",
-                            "Publisher": "Nature",
+                            "DOI": "10.1038/scientificamerican06061874-360a",
+                            "Publication": "Encyclopedia of Evolutionary Psychological Science",
+                            "Publisher": "",
                             "Abstract": ""
                         },
                         {
@@ -19343,7 +19341,7 @@
                                 "Tomas Mikolov",
                                 "Anoop Deoras",
                                 "Daniel Povey",
-                                "L. Burget",
+                                "Lukáš Burget",
                                 "J. Černocký"
                             ],
                             "PublicationYear": "2011",
@@ -20645,7 +20643,7 @@
                             "Abstract": "Many Knowledge Bases (KBs) are now readily available and encompass colossal quantities of information thanks to either a long-term funding effort (e.g. WordNet, OpenCyc) or a collaborative process (e.g. Freebase, DBpedia). However, each of them is based on a different rigorous symbolic framework which makes it hard to use their data in other systems. It is unfortunate because such rich structured knowledge might lead to a huge leap forward in many other areas of AI like nat- ural language processing (word-sense disambiguation, natural language understanding, ...), vision (scene classification, image semantic annotation, ...) or collaborative filtering. In this paper, we present a learning process based on an innovative neural network architecture designed to embed any of these symbolic representations into a more flexible continuous vector space in which the original knowledge is kept and enhanced. These learnt embeddings would allow data from any KB to be easily used in recent machine learning meth- ods for prediction and information retrieval. We illustrate our method on WordNet and Freebase and also present a way to adapt it to knowledge extraction from raw text."
                         },
                         {
-                            "PaperTitle": "Relational retrieval using a combination of path-constrained random walks",
+                            "PaperTitle": "Relational retrieval using a combination of path-constrained random walks",
                             "Authors": [
                                 "N. Lao",
                                 "William W. Cohen"
@@ -22526,7 +22524,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Multiplicative latent factor models for description and prediction of social networks",
+                            "PaperTitle": "Multiplicative latent factor models for description and prediction of social networks",
                             "Authors": [
                                 "Peter D. Hoff"
                             ],
@@ -26292,7 +26290,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Item-based top-<i>N</i>recommendation algorithms",
+                            "PaperTitle": "Item-based top-Nrecommendation algorithms",
                             "Authors": [
                                 "Mukund Deshpande",
                                 "George Karypis"
@@ -27470,6 +27468,22 @@
                             "Abstract": "Many Knowledge Bases (KBs) are now readily available and encompass colossal quantities of information thanks to either a long-term funding effort (e.g. WordNet, OpenCyc) or a collaborative process (e.g. Freebase, DBpedia). However, each of them is based on a different rigorous symbolic framework which makes it hard to use their data in other systems. It is unfortunate because such rich structured knowledge might lead to a huge leap forward in many other areas of AI like nat- ural language processing (word-sense disambiguation, natural language understanding, ...), vision (scene classification, image semantic annotation, ...) or collaborative filtering. In this paper, we present a learning process based on an innovative neural network architecture designed to embed any of these symbolic representations into a more flexible continuous vector space in which the original knowledge is kept and enhanced. These learnt embeddings would allow data from any KB to be easily used in recent machine learning meth- ods for prediction and information retrieval. We illustrate our method on WordNet and Freebase and also present a way to adapt it to knowledge extraction from raw text."
                         },
                         {
+                            "PaperTitle": "Toward an Architecture for Never-Ending Language Learning",
+                            "Authors": [
+                                "Andrew Carlson",
+                                "J. Betteridge",
+                                "B. Kisiel",
+                                "Burr Settles",
+                                "Estevam R. Hruschka",
+                                "Tom M. Mitchell"
+                            ],
+                            "PublicationYear": "2010",
+                            "DOI": "10.1609/aaai.v24i1.7519",
+                            "Publication": "AAAI Conference on Artificial Intelligence",
+                            "Publisher": "AAAI Conference on Artificial Intelligence",
+                            "Abstract": "We consider here the problem of building a never-ending language learner; that is, an intelligent computer agent that runs forever and that each day must (1) extract, or read, information from the web to populate a growing structured knowledge base, and (2) learn to perform this task better than on the previous day. In particular, we propose an approach and a set of design principles for such an agent, describe a partial implementation of such a system that has already learned to extract a knowledge base containing over 242,000 beliefs with an estimated precision of 74% after running for 67 days, and discuss lessons learned from this preliminary attempt to build a never-ending learning agent."
+                        },
+                        {
                             "PaperTitle": "Freebase: a collaboratively created graph database for structuring human knowledge",
                             "Authors": [
                                 "K. Bollacker",
@@ -28118,7 +28132,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Statistical evaluation of the Predictive Toxicology\nChallenge 2000–2001",
+                            "PaperTitle": "Statistical evaluation of the Predictive Toxicology Challenge 2000–2001",
                             "Authors": [
                                 "Hannu Toivonen",
                                 "Ashwin Srinivasan",
@@ -28803,7 +28817,7 @@
                             "Authors": [
                                 "Tomas Mikolov",
                                 "M. Karafiát",
-                                "L. Burget",
+                                "Lukáš Burget",
                                 "J. Černocký",
                                 "S. Khudanpur"
                             ],
@@ -28982,6 +28996,22 @@
                             "Publication": "Web Search and Data Mining",
                             "Publisher": "Web Search and Data Mining",
                             "Abstract": ""
+                        },
+                        {
+                            "PaperTitle": "Toward an Architecture for Never-Ending Language Learning",
+                            "Authors": [
+                                "Andrew Carlson",
+                                "J. Betteridge",
+                                "B. Kisiel",
+                                "Burr Settles",
+                                "Estevam R. Hruschka",
+                                "Tom M. Mitchell"
+                            ],
+                            "PublicationYear": "2010",
+                            "DOI": "10.1609/aaai.v24i1.7519",
+                            "Publication": "AAAI Conference on Artificial Intelligence",
+                            "Publisher": "AAAI Conference on Artificial Intelligence",
+                            "Abstract": "We consider here the problem of building a never-ending language learner; that is, an intelligent computer agent that runs forever and that each day must (1) extract, or read, information from the web to populate a growing structured knowledge base, and (2) learn to perform this task better than on the previous day. In particular, we propose an approach and a set of design principles for such an agent, describe a partial implementation of such a system that has already learned to extract a knowledge base containing over 242,000 beliefs with an estimated precision of 74% after running for 67 days, and discuss lessons learned from this preliminary attempt to build a never-ending learning agent."
                         },
                         {
                             "PaperTitle": "Non-negative Matrix Factorization on Manifold",
@@ -30712,7 +30742,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Discovering regulatory and signalling circuits in molecular \ninteraction networks",
+                            "PaperTitle": "Discovering regulatory and signalling circuits in molecular interaction networks",
                             "Authors": [
                                 "Trey Ideker",
                                 "Owen Ozier",
@@ -30990,7 +31020,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Large scale image annotation: learning to rank with joint word-image embeddings",
+                            "PaperTitle": "Large scale image annotation: learning to rank with joint word-image embeddings",
                             "Authors": [
                                 "J. Weston",
                                 "Samy Bengio",
@@ -32508,7 +32538,7 @@
                             "Abstract": "We propose a unified neural network architecture and learning algorithm that can be applied to various natural language processing tasks including part-of-speech tagging, chunking, named entity recognition, and semantic role labeling. This versatility is achieved by trying to avoid task-specific engineering and therefore disregarding a lot of prior knowledge. Instead of exploiting man-made input features carefully optimized for each task, our system learns internal representations on the basis of vast amounts of mostly unlabeled training data. This work is then used as a basis for building a freely available tagging system with good performance and minimal computational requirements."
                         },
                         {
-                            "PaperTitle": "Large scale image annotation: learning to rank with joint word-image embeddings",
+                            "PaperTitle": "Large scale image annotation: learning to rank with joint word-image embeddings",
                             "Authors": [
                                 "J. Weston",
                                 "Samy Bengio",
@@ -33109,7 +33139,7 @@
                                 "Tomas Mikolov",
                                 "Anoop Deoras",
                                 "Stefan Kombrink",
-                                "L. Burget",
+                                "Lukáš Burget",
                                 "J. Černocký"
                             ],
                             "PublicationYear": "2011",
@@ -33282,7 +33312,7 @@
                             "Abstract": "The family of decision tree learning algorithms is among the most widespread and studied. Motivated by the desire to develop learning algorithms that can generalize when learning highly varying functions such as those presumably needed to achieve artificial intelligence, we study some theoretical limitations of decision trees. We demonstrate formally that they can be seriously hurt by the curse of dimensionality in a sense that is a bit different from other nonparametric statistical methods, but most importantly, that they cannot generalize to variations not seen in the training set. This is because a decision tree creates a partition of the input space and needs at least one example in each of the regions associated with a leaf to make a sensible prediction in that region. A better understanding of the fundamental reasons for this limitation suggests that one should use forests or even deeper architectures instead of trees, which provide a form of distributed representation and can generalize to variations not encountered in the training data."
                         },
                         {
-                            "PaperTitle": "Large scale image annotation: learning to rank with joint word-image embeddings",
+                            "PaperTitle": "Large scale image annotation: learning to rank with joint word-image embeddings",
                             "Authors": [
                                 "J. Weston",
                                 "Samy Bengio",
@@ -34551,6 +34581,22 @@
                             "Abstract": "This paper describes a high performance sampling architecture for inference of latent topic models on a cluster of workstations. Our system is faster than previous work by over an order of magnitude and it is capable of dealing with hundreds of millions of documents and thousands of topics. The algorithm relies on a novel communication structure, namely the use of a distributed (key, value) storage for synchronizing the sampler state between computers. Our architecture entirely obviates the need for separate computation and synchronization phases. Instead, disk, CPU, and network are used simultaneously to achieve high performance. We show that this architecture is entirely general and that it can be extended easily to more sophisticated latent variable models such as n-grams and hierarchies."
                         },
                         {
+                            "PaperTitle": "Toward an Architecture for Never-Ending Language Learning",
+                            "Authors": [
+                                "Andrew Carlson",
+                                "J. Betteridge",
+                                "B. Kisiel",
+                                "Burr Settles",
+                                "Estevam R. Hruschka",
+                                "Tom M. Mitchell"
+                            ],
+                            "PublicationYear": "2010",
+                            "DOI": "10.1609/aaai.v24i1.7519",
+                            "Publication": "AAAI Conference on Artificial Intelligence",
+                            "Publisher": "AAAI Conference on Artificial Intelligence",
+                            "Abstract": "We consider here the problem of building a never-ending language learner; that is, an intelligent computer agent that runs forever and that each day must (1) extract, or read, information from the web to populate a growing structured knowledge base, and (2) learn to perform this task better than on the previous day. In particular, we propose an approach and a set of design principles for such an agent, describe a partial implementation of such a system that has already learned to extract a knowledge base containing over 242,000 beliefs with an estimated precision of 74% after running for 67 days, and discuss lessons learned from this preliminary attempt to build a never-ending learning agent."
+                        },
+                        {
                             "PaperTitle": "iCoseg: Interactive co-segmentation with intelligent scribble guidance",
                             "Authors": [
                                 "Dhruv Batra",
@@ -35323,7 +35369,7 @@
                             ],
                             "PublicationYear": "1989",
                             "DOI": "10.2307/2289936",
-                            "Publisher": "JSTOR",
+                            "Publisher": "Informa UK Limited",
                             "Publication": "Journal of the American Statistical Association",
                             "Abstract": ""
                         },
@@ -36966,7 +37012,7 @@
                     "Abstract": "",
                     "References": [
                         {
-                            "PaperTitle": "<i>Snowball</i>",
+                            "PaperTitle": "Snowball",
                             "Authors": [
                                 "Eugene Agichtein",
                                 "Luis Gravano"
@@ -37754,7 +37800,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Finding the <i>K</i> Shortest Loopless Paths in a Network",
+                            "PaperTitle": "Finding the K Shortest Loopless Paths in a Network",
                             "Authors": [
                                 "Jin Y. Yen"
                             ],
@@ -37765,7 +37811,7 @@
                             "Abstract": "This paper presents an algorithm for finding the K loopless paths that have the shortest lengths from one node to another node in a network. The significance of the new algorithm is that its computational upper bound increases only linearly with the value of K. Consequently, in general, the new algorithm is extremely efficient as compared with the algorithms proposed by Bock, Kantner, and Haynes [2], Pollack [7], [8], Clarke, Krikorian, and Rausan [3], Sakarovitch [9] and others. This paper first reviews the algorithms presently available for finding the K shortest loopless paths in terms of the computational effort and memory addresses they require. This is followed by the presentation of the new algorithm and its justification. Finally, the efficiency of the new algorithm is examined and compared with that of other algorithms."
                         },
                         {
-                            "PaperTitle": "A Procedure for Computing the <i>K</i> Best Solutions to Discrete Optimization Problems and Its Application to the Shortest Path Problem",
+                            "PaperTitle": "A Procedure for Computing the K Best Solutions to Discrete Optimization Problems and Its Application to the Shortest Path Problem",
                             "Authors": [
                                 "Eugene L. Lawler"
                             ],
@@ -38621,7 +38667,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "A Fixed Size Storage <i>O</i>(<i>n</i><sup>3</sup>) Time Complexity Learning Algorithm for Fully Recurrent Continually Running Networks",
+                            "PaperTitle": "A Fixed Size Storage O(n3) Time Complexity Learning Algorithm for Fully Recurrent Continually Running Networks",
                             "Authors": [
                                 "Jürgen Schmidhuber"
                             ],
@@ -38948,7 +38994,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "<i>K</i>-means clustering via principal component analysis",
+                            "PaperTitle": "K-means clustering via principal component analysis",
                             "Authors": [
                                 "Chris Ding",
                                 "Xiaofeng He"
@@ -47687,6 +47733,17 @@
                             "Abstract": "CORUM is a database that provides a manually curated repository of experimentally characterized protein complexes from mammalian organisms, mainly human (64%), mouse (16%) and rat (12%). Protein complexes are key molecular entities that integrate multiple gene products to perform cellular functions. The new CORUM 2.0 release encompasses 2837 protein complexes offering the largest and most comprehensive publicly available dataset of mammalian protein complexes. The CORUM dataset is built from 3198 different genes, representing ∼16% of the protein coding genes in humans. Each protein complex is described by a protein complex name, subunit composition, function as well as the literature reference that characterizes the respective protein complex. Recent developments include mapping of functional annotation to Gene Ontology terms as well as cross-references to Entrez Gene identifiers. In addition, a ‘Phylogenetic Conservation’ analysis tool was implemented that analyses the potential occurrence of orthologous protein complex subunits in mammals and other selected groups of organisms. This allows one to predict the occurrence of protein complexes in different phylogenetic groups. CORUM is freely accessible at (http://mips.helmholtz-muenchen.de/genre/proj/corum/index.html)."
                         },
                         {
+                            "PaperTitle": "Biological network comparison using graphlet degree distribution",
+                            "Authors": [
+                                "Natasa Przulj"
+                            ],
+                            "PublicationYear": "2007",
+                            "DOI": "10.1093/bioinformatics/btl301",
+                            "Publication": "Bioinform.",
+                            "Publisher": "",
+                            "Abstract": "MOTIVATION Analogous to biological sequence comparison, comparing cellular networks is an important problem that could provide insight into biological understanding and therapeutics. For technical reasons, comparing large networks is computationally infeasible, and thus heuristics, such as the degree distribution, clustering coefficient, diameter, and relative graphlet frequency distribution have been sought. It is easy to demonstrate that two networks are different by simply showing a short list of properties in which they differ. It is much harder to show that two networks are similar, as it requires demonstrating their similarity in all of their exponentially many properties. Clearly, it is computationally prohibitive to analyze all network properties, but the larger the number of constraints we impose in determining network similarity, the more likely it is that the networks will truly be similar. RESULTS We introduce a new systematic measure of a network's local structure that imposes a large number of similarity constraints on networks being compared. In particular, we generalize the degree distribution, which measures the number of nodes 'touching' k edges, into distributions measuring the number of nodes 'touching' k graphlets, where graphlets are small connected non-isomorphic subgraphs of a large network. Our new measure of network local structure consists of 73 graphlet degree distributions of graphlets with 2-5 nodes, but it is easily extendible to a greater number of constraints (i.e. graphlets), if necessary, and the extensions are limited only by the available CPU. Furthermore, we show a way to combine the 73 graphlet degree distributions into a network 'agreement' measure which is a number between 0 and 1, where 1 means that networks have identical distributions and 0 means that they are far apart. Based on this new network agreement measure, we show that almost all of the 14 eukaryotic PPI networks, including human, resulting from various high-throughput experimental techniques, as well as from curated databases, are better modeled by geometric random graphs than by Erdös-Rény, random scale-free, or Barabási-Albert scale-free networks. AVAILABILITY Software executables are available upon request."
+                        },
+                        {
                             "PaperTitle": "Germline Transmission and Tissue-Specific Expression of Transgenes Delivered by Lentiviral Vectors",
                             "Authors": [
                                 "C. Lois",
@@ -54636,6 +54693,19 @@
                             "Abstract": ""
                         },
                         {
+                            "PaperTitle": "Utilizing Context in Generative Bayesian Models for Linked Corpus",
+                            "Authors": [
+                                "Saurabh Kataria",
+                                "Prasenjit Mitra",
+                                "S. Bhatia"
+                            ],
+                            "PublicationYear": "2010",
+                            "DOI": "10.1609/aaai.v24i1.7520",
+                            "Publication": "AAAI Conference on Artificial Intelligence",
+                            "Publisher": "AAAI Conference on Artificial Intelligence",
+                            "Abstract": "In an interlinked corpus of documents, the context in which a citation appears provides extra information about the cited document. However, associating terms in the context to the cited document remains an open problem. We propose a novel document generation approach that statistically incorporates the context in which a document links to another document. We quantitatively show that the proposed generation scheme explains the linking phenomenon better than previous approaches. The context information along with the actual content of the document provides signiﬁcant improvements over the previous approaches for various real world evaluation tasks such as link prediction and log-likelihood estimation on unseen content. The proposed method is more scalable to large collection of documents compared to the previous approaches."
+                        },
+                        {
                             "PaperTitle": "A Discriminative Approach to Topic-Based Citation Recommendation",
                             "Authors": [
                                 "Jie Tang",
@@ -54751,7 +54821,546 @@
                     "Publication": "North American Chapter of the Association for Computational Linguistics",
                     "Publisher": "North American Chapter of the Association for Computational Linguistics",
                     "Abstract": "We introduce a new type of deep contextualized word representation that models both (1) complex characteristics of word use (e.g., syntax and semantics), and (2) how these uses vary across linguistic contexts (i.e., to model polysemy). Our word vectors are learned functions of the internal states of a deep bidirectional language model (biLM), which is pre-trained on a large text corpus. We show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including question answering, textual entailment and sentiment analysis. We also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.",
-                    "References": []
+                    "References": [
+                        {
+                            "PaperTitle": "Stochastic Answer Networks for Machine Reading Comprehension",
+                            "Authors": [
+                                "Xiaodong Liu",
+                                "Yelong Shen",
+                                "Kevin Duh",
+                                "Jianfeng Gao"
+                            ],
+                            "PublicationYear": "2017",
+                            "DOI": "10.18653/v1/P18-1157",
+                            "Publication": "Annual Meeting of the Association for Computational Linguistics",
+                            "Publisher": "Annual Meeting of the Association for Computational Linguistics",
+                            "Abstract": "We propose a simple yet robust stochastic answer network (SAN) that simulates multi-step reasoning in machine reading comprehension. Compared to previous work such as ReasoNet which used reinforcement learning to determine the number of steps, the unique feature is the use of a kind of stochastic prediction dropout on the answer module (final layer) of the neural network during the training. We show that this simple trick improves robustness and achieves results competitive to the state-of-the-art on the Stanford Question Answering Dataset (SQuAD), the Adversarial SQuAD, and the Microsoft MAchine Reading COmprehension Dataset (MS MARCO)."
+                        },
+                        {
+                            "PaperTitle": "Simple and Effective Multi-Paragraph Reading Comprehension",
+                            "Authors": [
+                                "Christopher Clark",
+                                "Matt Gardner"
+                            ],
+                            "PublicationYear": "2017",
+                            "DOI": "10.18653/v1/P18-1078",
+                            "Publication": "Annual Meeting of the Association for Computational Linguistics",
+                            "Publisher": "Annual Meeting of the Association for Computational Linguistics",
+                            "Abstract": "We introduce a method of adapting neural paragraph-level question answering models to the case where entire documents are given as input. Most current question answering models cannot scale to document or multi-document input, and naively applying these models to each paragraph independently often results in them being distracted by irrelevant text. We show that it is possible to significantly improve performance by using a modified training scheme that teaches the model to ignore non-answer containing paragraphs. Our method involves sampling multiple paragraphs from each document, and using an objective function that requires the model to produce globally correct output. We additionally identify and improve upon a number of other design decisions that arise when working with document-level data. Experiments on TriviaQA and SQuAD shows our method advances the state of the art, including a 10 point gain on TriviaQA."
+                        },
+                        {
+                            "PaperTitle": "Neural Sequence Learning Models for Word Sense Disambiguation",
+                            "Authors": [
+                                "Alessandro Raganato",
+                                "Claudio Delli Bovi",
+                                "Roberto Navigli"
+                            ],
+                            "PublicationYear": "2017",
+                            "DOI": "10.18653/v1/D17-1120",
+                            "Publication": "Conference on Empirical Methods in Natural Language Processing",
+                            "Publisher": "Conference on Empirical Methods in Natural Language Processing",
+                            "Abstract": "Word Sense Disambiguation models exist in many flavors. Even though supervised ones tend to perform best in terms of accuracy, they often lose ground to more flexible knowledge-based solutions, which do not require training by a word expert for every disambiguation target. To bridge this gap we adopt a different perspective and rely on sequence learning to frame the disambiguation problem: we propose and study in depth a series of end-to-end neural architectures directly tailored to the task, from bidirectional Long Short-Term Memory to encoder-decoder models. Our extensive evaluation over standard benchmarks and in multiple languages shows that sequence learning enables more versatile all-words models that consistently lead to state-of-the-art results, even against word experts with engineered features."
+                        },
+                        {
+                            "PaperTitle": "End-to-end Neural Coreference Resolution",
+                            "Authors": [
+                                "Kenton Lee",
+                                "Luheng He",
+                                "M. Lewis",
+                                "Luke Zettlemoyer"
+                            ],
+                            "PublicationYear": "2017",
+                            "DOI": "10.18653/v1/D17-1018",
+                            "Publication": "Conference on Empirical Methods in Natural Language Processing",
+                            "Publisher": "Conference on Empirical Methods in Natural Language Processing",
+                            "Abstract": "We introduce the first end-to-end coreference resolution model and show that it significantly outperforms all previous work without using a syntactic parser or hand-engineered mention detector. The key idea is to directly consider all spans in a document as potential mentions and learn distributions over possible antecedents for each. The model computes span embeddings that combine context-dependent boundary representations with a head-finding attention mechanism. It is trained to maximize the marginal likelihood of gold antecedent spans from coreference clusters and is factored to enable aggressive pruning of potential mentions. Experiments demonstrate state-of-the-art performance, with a gain of 1.5 F1 on the OntoNotes benchmark and by 3.1 F1 using a 5-model ensemble, despite the fact that this is the first approach to be successfully trained with no external resources."
+                        },
+                        {
+                            "PaperTitle": "Deep Semantic Role Labeling: What Works and What’s Next",
+                            "Authors": [
+                                "Luheng He",
+                                "Kenton Lee",
+                                "M. Lewis",
+                                "Luke Zettlemoyer"
+                            ],
+                            "PublicationYear": "2017",
+                            "DOI": "10.18653/v1/P17-1044",
+                            "Publication": "Annual Meeting of the Association for Computational Linguistics",
+                            "Publisher": "Annual Meeting of the Association for Computational Linguistics",
+                            "Abstract": "We introduce a new deep learning model for semantic role labeling (SRL) that significantly improves the state of the art, along with detailed analyses to reveal its strengths and limitations. We use a deep highway BiLSTM architecture with constrained decoding, while observing a number of recent best practices for initialization and regularization. Our 8-layer ensemble model achieves 83.2 F1 on theCoNLL 2005 test set and 83.4 F1 on CoNLL 2012, roughly a 10% relative error reduction over the previous state of the art. Extensive empirical analysis of these gains show that (1) deep models excel at recovering long-distance dependencies but can still make surprisingly obvious errors, and (2) that there is still room for syntactic parsers to improve these results."
+                        },
+                        {
+                            "PaperTitle": "Gated Self-Matching Networks for Reading Comprehension and Question Answering",
+                            "Authors": [
+                                "Wenhui Wang",
+                                "Nan Yang",
+                                "Furu Wei",
+                                "Baobao Chang",
+                                "M. Zhou"
+                            ],
+                            "PublicationYear": "2017",
+                            "DOI": "10.18653/v1/P17-1018",
+                            "Publication": "Annual Meeting of the Association for Computational Linguistics",
+                            "Publisher": "Annual Meeting of the Association for Computational Linguistics",
+                            "Abstract": "In this paper, we present the gated self-matching networks for reading comprehension style question answering, which aims to answer questions from a given passage. We first match the question and passage with gated attention-based recurrent networks to obtain the question-aware passage representation. Then we propose a self-matching attention mechanism to refine the representation by matching the passage against itself, which effectively encodes information from the whole passage. We finally employ the pointer networks to locate the positions of answers from the passages. We conduct extensive experiments on the SQuAD dataset. The single model achieves 71.3% on the evaluation metrics of exact match on the hidden test set, while the ensemble model further boosts the results to 75.9%. At the time of submission of the paper, our model holds the first place on the SQuAD leaderboard for both single and ensemble model."
+                        },
+                        {
+                            "PaperTitle": "What do Neural Machine Translation Models Learn about Morphology?",
+                            "Authors": [
+                                "Yonatan Belinkov",
+                                "Nadir Durrani",
+                                "Fahim Dalvi",
+                                "Hassan Sajjad",
+                                "James R. Glass"
+                            ],
+                            "PublicationYear": "2017",
+                            "DOI": "10.18653/v1/P17-1080",
+                            "Publication": "Annual Meeting of the Association for Computational Linguistics",
+                            "Publisher": "Annual Meeting of the Association for Computational Linguistics",
+                            "Abstract": "Neural machine translation (MT) models obtain state-of-the-art performance while maintaining a simple, end-to-end architecture. However, little is known about what these models learn about source and target languages during the training process. In this work, we analyze the representations learned by neural MT models at various levels of granularity and empirically evaluate the quality of the representations for learning morphology through extrinsic part-of-speech and morphological tagging tasks. We conduct a thorough investigation along several parameters: word-based vs. character-based representations, depth of the encoding layer, the identity of the target language, and encoder vs. decoder representations. Our data-driven, quantitative evaluation sheds light on important aspects in the neural MT system and its ability to capture word structure."
+                        },
+                        {
+                            "PaperTitle": "Semi-supervised sequence tagging with bidirectional language models",
+                            "Authors": [
+                                "Matthew E. Peters",
+                                "Bridger Waleed Ammar",
+                                "Chandra Bhagavatula",
+                                "Russell Power"
+                            ],
+                            "PublicationYear": "2017",
+                            "DOI": "10.18653/v1/P17-1161",
+                            "Publication": "Annual Meeting of the Association for Computational Linguistics",
+                            "Publisher": "Annual Meeting of the Association for Computational Linguistics",
+                            "Abstract": "Pre-trained word embeddings learned from unlabeled text have become a standard component of neural network architectures for NLP tasks. However, in most cases, the recurrent network that operates on word-level representations to produce context sensitive representations is trained on relatively little labeled data. In this paper, we demonstrate a general semi-supervised approach for adding pretrained context embeddings from bidirectional language models to NLP systems and apply it to sequence labeling tasks. We evaluate our model on two standard datasets for named entity recognition (NER) and chunking, and in both cases achieve state of the art results, surpassing previous systems that use other forms of transfer or joint learning with additional labeled data and task specific gazetteers."
+                        },
+                        {
+                            "PaperTitle": "Word Sense Disambiguation: A Unified Evaluation Framework and Empirical Comparison",
+                            "Authors": [
+                                "Roberto Navigli",
+                                "José Camacho-Collados",
+                                "Alessandro Raganato"
+                            ],
+                            "PublicationYear": "2017",
+                            "DOI": "10.18653/V1/E17-1010",
+                            "Publication": "Conference of the European Chapter of the Association for Computational Linguistics",
+                            "Publisher": "Conference of the European Chapter of the Association for Computational Linguistics",
+                            "Abstract": "Word Sense Disambiguation is a long-standing task in Natural Language Processing, lying at the core of human language understanding. However, the evaluation of automatic systems has been problematic, mainly due to the lack of a reliable evaluation framework. In this paper we develop a unified evaluation framework and analyze the performance of various Word Sense Disambiguation systems in a fair setup. The results show that supervised systems clearly outperform knowledge-based models. Among the supervised systems, a linear classifier trained on conventional local features still proves to be a hard baseline to beat. Nonetheless, recent approaches exploiting neural networks on unlabeled corpora achieve promising results, surpassing this hard baseline in most test sets."
+                        },
+                        {
+                            "PaperTitle": "A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks",
+                            "Authors": [
+                                "Kazuma Hashimoto",
+                                "Caiming Xiong",
+                                "Yoshimasa Tsuruoka",
+                                "R. Socher"
+                            ],
+                            "PublicationYear": "2016",
+                            "DOI": "10.18653/v1/D17-1206",
+                            "Publication": "Conference on Empirical Methods in Natural Language Processing",
+                            "Publisher": "Conference on Empirical Methods in Natural Language Processing",
+                            "Abstract": "Transfer and multi-task learning have traditionally focused on either a single source-target pair or very few, similar tasks. Ideally, the linguistic levels of morphology, syntax and semantics would benefit each other by being trained in a single model. We introduce a joint many-task model together with a strategy for successively growing its depth to solve increasingly complex tasks. Higher layers include shortcut connections to lower-level task predictions to reflect linguistic hierarchies. We use a simple regularization term to allow for optimizing all model weights to improve one task’s loss without exhibiting catastrophic interference of the other tasks. Our single end-to-end model obtains state-of-the-art or competitive results on five different tasks from tagging, parsing, relatedness, and entailment tasks."
+                        },
+                        {
+                            "PaperTitle": "Deep Reinforcement Learning for Mention-Ranking Coreference Models",
+                            "Authors": [
+                                "Kevin Clark",
+                                "Christopher D. Manning"
+                            ],
+                            "PublicationYear": "2016",
+                            "DOI": "10.18653/v1/D16-1245",
+                            "Publication": "Conference on Empirical Methods in Natural Language Processing",
+                            "Publisher": "Conference on Empirical Methods in Natural Language Processing",
+                            "Abstract": "Coreference resolution systems are typically trained with heuristic loss functions that require careful tuning. In this paper we instead apply reinforcement learning to directly optimize a neural mention-ranking model for coreference evaluation metrics. We experiment with two approaches: the REINFORCE policy gradient algorithm and a reward-rescaled max-margin objective. We find the latter to be more effective, resulting in significant improvements over the current state-of-the-art on the English and Chinese portions of the CoNLL 2012 Shared Task."
+                        },
+                        {
+                            "PaperTitle": "Enhanced LSTM for Natural Language Inference",
+                            "Authors": [
+                                "Qian Chen",
+                                "Xiao-Dan Zhu",
+                                "Zhenhua Ling",
+                                "Si Wei",
+                                "Hui Jiang",
+                                "Diana Inkpen"
+                            ],
+                            "PublicationYear": "2016",
+                            "DOI": "10.18653/v1/P17-1152",
+                            "Publication": "Annual Meeting of the Association for Computational Linguistics",
+                            "Publisher": "Annual Meeting of the Association for Computational Linguistics",
+                            "Abstract": "Reasoning and inference are central to human and artificial intelligence. Modeling inference in human language is very challenging. With the availability of large annotated data (Bowman et al., 2015), it has recently become feasible to train neural network based inference models, which have shown to be very effective. In this paper, we present a new state-of-the-art result, achieving the accuracy of 88.6% on the Stanford Natural Language Inference Dataset. Unlike the previous top models that use very complicated network architectures, we first demonstrate that carefully designing sequential inference models based on chain LSTMs can outperform all previous models. Based on this, we further show that by explicitly considering recursive architectures in both local inference modeling and inference composition, we achieve additional improvement. Particularly, incorporating syntactic parsing information contributes to our best result—it further improves the performance even when added to the already very strong model."
+                        },
+                        {
+                            "PaperTitle": "context2vec: Learning Generic Context Embedding with Bidirectional LSTM",
+                            "Authors": [
+                                "Oren Melamud",
+                                "J. Goldberger",
+                                "Ido Dagan"
+                            ],
+                            "PublicationYear": "2016",
+                            "DOI": "10.18653/v1/K16-1006",
+                            "Publication": "Conference on Computational Natural Language Learning",
+                            "Publisher": "Conference on Computational Natural Language Learning",
+                            "Abstract": "Context representations are central to various NLP tasks, such as word sense disam-biguation, named entity recognition, co-reference resolution, and many more. In this work we present a neural model for efﬁciently learning a generic context embedding function from large corpora, us-ing bidirectional LSTM. With a very simple application of our context representations, we manage to surpass or nearly reach state-of-the-art results on sentence completion, lexical substitution and word sense disambiguation tasks, while substantially outperforming the popular context representation of averaged word embeddings. We release our code and pre-trained models, suggesting they could be useful in a wide variety of NLP tasks."
+                        },
+                        {
+                            "PaperTitle": "Deep multi-task learning with low level tasks supervised at lower layers",
+                            "Authors": [
+                                "Anders Søgaard",
+                                "Yoav Goldberg"
+                            ],
+                            "PublicationYear": "2016",
+                            "DOI": "10.18653/v1/P16-2038",
+                            "Publication": "Annual Meeting of the Association for Computational Linguistics",
+                            "Publisher": "Annual Meeting of the Association for Computational Linguistics",
+                            "Abstract": "In all previous work on deep multi-task learning we are aware of, all task supervisions are on the same (outermost) layer. We present a multi-task learning architecture with deep bi-directional RNNs, where different tasks supervision can happen at different layers. We present experiments in syntactic chunking and CCG supertagging, coupled with the additional task of POS-tagging. We show that it is consistently better to have POS supervision at the innermost rather than the outermost layer. We argue that this is because “lowlevel” tasks are better kept at the lower layers, enabling the higher-level tasks to make use of the shared representation of the lower-level tasks. Finally, we also show how this architecture can be used for domain adaptation."
+                        },
+                        {
+                            "PaperTitle": "Embeddings for Word Sense Disambiguation: An Evaluation Study",
+                            "Authors": [
+                                "Ignacio Iacobacci",
+                                "Mohammad Taher Pilehvar",
+                                "Roberto Navigli"
+                            ],
+                            "PublicationYear": "2016",
+                            "DOI": "10.18653/v1/P16-1085",
+                            "Publication": "Annual Meeting of the Association for Computational Linguistics",
+                            "Publisher": "Annual Meeting of the Association for Computational Linguistics",
+                            "Abstract": "Recent years have seen a dramatic growth in the popularity of word embeddings mainly owing to their ability to capture semantic information from massive amounts of textual content. As a result, many tasks in Natural Language Processing have tried to take advantage of the potential of these distributional models. In this work, we study how word embeddings can be used in Word Sense Disambiguation, one of the oldest tasks in Natural Language Processing and Artificial Intelligence. We propose different methods through which word embeddings can be leveraged in a state-of-the-art supervised WSD system architecture, and perform a deep analysis of how different parameters affect performance. We show how a WSD system that makes use of word embeddings alone, if designed properly, can provide significant performance improvement over a state-ofthe-art WSD system that incorporates several standard WSD features."
+                        },
+                        {
+                            "PaperTitle": "Neural Tree Indexers for Text Understanding",
+                            "Authors": [
+                                "Tsendsuren Munkhdalai",
+                                "Hong Yu"
+                            ],
+                            "PublicationYear": "2016",
+                            "DOI": "10.18653/V1/E17-1002",
+                            "Publication": "Conference of the European Chapter of the Association for Computational Linguistics",
+                            "Publisher": "Conference of the European Chapter of the Association for Computational Linguistics",
+                            "Abstract": "Recurrent neural networks (RNNs) process input text sequentially and model the conditional transition between word tokens. In contrast, the advantages of recursive networks include that they explicitly model the compositionality and the recursive structure of natural language. However, the current recursive architecture is limited by its dependence on syntactic tree. In this paper, we introduce a robust syntactic parsing-independent tree structured model, Neural Tree Indexers (NTI) that provides a middle ground between the sequential RNNs and the syntactic treebased recursive models. NTI constructs a full n-ary tree by processing the input text with its node function in a bottom-up fashion. Attention mechanism can then be applied to both structure and node function. We implemented and evaluated a binary tree model of NTI, showing the model achieved the state-of-the-art performance on three different NLP tasks: natural language inference, answer sentence selection, and sentence classification, outperforming state-of-the-art recurrent and recursive neural networks."
+                        },
+                        {
+                            "PaperTitle": "Enriching Word Vectors with Subword Information",
+                            "Authors": [
+                                "Piotr Bojanowski",
+                                "Edouard Grave",
+                                "Armand Joulin",
+                                "Tomas Mikolov"
+                            ],
+                            "PublicationYear": "2016",
+                            "DOI": "10.1162/tacl_a_00051",
+                            "Publication": "Transactions of the Association for Computational Linguistics",
+                            "Publisher": "Transactions of the Association for Computational Linguistics",
+                            "Abstract": "Continuous word representations, trained on large unlabeled corpora are useful for many natural language processing tasks. Popular models that learn such representations ignore the morphology of words, by assigning a distinct vector to each word. This is a limitation, especially for languages with large vocabularies and many rare words. In this paper, we propose a new approach based on the skipgram model, where each word is represented as a bag of character n-grams. A vector representation is associated to each character n-gram; words being represented as the sum of these representations. Our method is fast, allowing to train models on large corpora quickly and allows us to compute word representations for words that did not appear in the training data. We evaluate our word representations on nine different languages, both on word similarity and analogy tasks. By comparing to recently proposed morphological word representations, we show that our vectors achieve state-of-the-art performance on these tasks."
+                        },
+                        {
+                            "PaperTitle": "Charagram: Embedding Words and Sentences via Character n-grams",
+                            "Authors": [
+                                "J. Wieting",
+                                "Mohit Bansal",
+                                "Kevin Gimpel",
+                                "Karen Livescu"
+                            ],
+                            "PublicationYear": "2016",
+                            "DOI": "10.18653/v1/D16-1157",
+                            "Publication": "Conference on Empirical Methods in Natural Language Processing",
+                            "Publisher": "Conference on Empirical Methods in Natural Language Processing",
+                            "Abstract": "We present Charagram embeddings, a simple approach for learning character-based compositional models to embed textual sequences. A word or sentence is represented using a character n-gram count vector, followed by a single nonlinear transformation to yield a low-dimensional embedding. We use three tasks for evaluation: word similarity, sentence similarity, and part-of-speech tagging. We demonstrate that Charagram embeddings outperform more complex architectures based on character-level recurrent and convolutional neural networks, achieving new state-of-the-art performance on several similarity tasks."
+                        },
+                        {
+                            "PaperTitle": "SQuAD: 100,000+ Questions for Machine Comprehension of Text",
+                            "Authors": [
+                                "Pranav Rajpurkar",
+                                "Jian Zhang",
+                                "Konstantin Lopyrev",
+                                "Percy Liang"
+                            ],
+                            "PublicationYear": "2016",
+                            "DOI": "10.18653/v1/D16-1264",
+                            "Publication": "Conference on Empirical Methods in Natural Language Processing",
+                            "Publisher": "Conference on Empirical Methods in Natural Language Processing",
+                            "Abstract": "We present the Stanford Question Answering Dataset (SQuAD), a new reading comprehension dataset consisting of 100,000+ questions posed by crowdworkers on a set of Wikipedia articles, where the answer to each question is a segment of text from the corresponding reading passage. We analyze the dataset to understand the types of reasoning required to answer the questions, leaning heavily on dependency and constituency trees. We build a strong logistic regression model, which achieves an F1 score of 51.0%, a significant improvement over a simple baseline (20%). However, human performance (86.8%) is much higher, indicating that the dataset presents a good challenge problem for future research. The dataset is freely available at this https URL"
+                        },
+                        {
+                            "PaperTitle": "Learning Global Features for Coreference Resolution",
+                            "Authors": [
+                                "Sam Wiseman",
+                                "Alexander M. Rush",
+                                "Stuart M. Shieber"
+                            ],
+                            "PublicationYear": "2016",
+                            "DOI": "10.18653/v1/N16-1114",
+                            "Publication": "North American Chapter of the Association for Computational Linguistics",
+                            "Publisher": "North American Chapter of the Association for Computational Linguistics",
+                            "Abstract": "There is compelling evidence that coreference prediction would benefit from modeling global information about entity-clusters. Yet, state-of-the-art performance can be achieved with systems treating each mention prediction independently, which we attribute to the inherent difficulty of crafting informative cluster-level features. We instead propose to use recurrent neural networks (RNNs) to learn latent, global representations of entity clusters directly from their mentions. We show that such representations are especially useful for the prediction of pronominal mentions, and can be incorporated into an end-to-end coreference system that outperforms the state of the art without requiring any additional search."
+                        },
+                        {
+                            "PaperTitle": "End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF",
+                            "Authors": [
+                                "Xuezhe Ma",
+                                "E. Hovy"
+                            ],
+                            "PublicationYear": "2016",
+                            "DOI": "10.18653/v1/P16-1101",
+                            "Publication": "Annual Meeting of the Association for Computational Linguistics",
+                            "Publisher": "Annual Meeting of the Association for Computational Linguistics",
+                            "Abstract": "State-of-the-art sequence labeling systems traditionally require large amounts of task-specific knowledge in the form of hand-crafted features and data pre-processing. In this paper, we introduce a novel neutral network architecture that benefits from both word- and character-level representations automatically, by using combination of bidirectional LSTM, CNN and CRF. Our system is truly end-to-end, requiring no feature engineering or data pre-processing, thus making it applicable to a wide range of sequence labeling tasks. We evaluate our system on two data sets for two sequence labeling tasks --- Penn Treebank WSJ corpus for part-of-speech (POS) tagging and CoNLL 2003 corpus for named entity recognition (NER). We obtain state-of-the-art performance on both the two data --- 97.55\\% accuracy for POS tagging and 91.21\\% F1 for NER."
+                        },
+                        {
+                            "PaperTitle": "Neural Architectures for Named Entity Recognition",
+                            "Authors": [
+                                "Guillaume Lample",
+                                "Miguel Ballesteros",
+                                "Sandeep Subramanian",
+                                "Kazuya Kawakami",
+                                "Chris Dyer"
+                            ],
+                            "PublicationYear": "2016",
+                            "DOI": "10.18653/v1/N16-1030",
+                            "Publication": "North American Chapter of the Association for Computational Linguistics",
+                            "Publisher": "North American Chapter of the Association for Computational Linguistics",
+                            "Abstract": "Comunicacio presentada a la 2016 Conference of the North American Chapter of the Association for Computational Linguistics, celebrada a San Diego (CA, EUA) els dies 12 a 17 de juny 2016."
+                        },
+                        {
+                            "PaperTitle": "Named Entity Recognition with Bidirectional LSTM-CNNs",
+                            "Authors": [
+                                "Jason P. C. Chiu",
+                                "Eric Nichols"
+                            ],
+                            "PublicationYear": "2015",
+                            "DOI": "10.1162/tacl_a_00104",
+                            "Publication": "Transactions of the Association for Computational Linguistics",
+                            "Publisher": "Transactions of the Association for Computational Linguistics",
+                            "Abstract": "Named entity recognition is a challenging task that has traditionally required large amounts of knowledge in the form of feature engineering and lexicons to achieve high performance. In this paper, we present a novel neural network architecture that automatically detects word- and character-level features using a hybrid bidirectional LSTM and CNN architecture, eliminating the need for most feature engineering. We also propose a novel method of encoding partial lexicon matches in neural networks and compare it to existing approaches. Extensive evaluation shows that, given only tokenized text and publicly available word embeddings, our system is competitive on the CoNLL-2003 dataset and surpasses the previously reported state of the art performance on the OntoNotes 5.0 dataset by 2.13 F1 points. By using two lexicons constructed from publicly-available sources, we establish new state of the art performance with an F1 score of 91.62 on CoNLL-2003 and 86.28 on OntoNotes, surpassing systems that employ heavy feature engineering, proprietary lexicons, and rich entity linking information."
+                        },
+                        {
+                            "PaperTitle": "Character-Aware Neural Language Models",
+                            "Authors": [
+                                "Yoon Kim",
+                                "Yacine Jernite",
+                                "D. Sontag",
+                                "Alexander M. Rush"
+                            ],
+                            "PublicationYear": "2015",
+                            "DOI": "10.1609/aaai.v30i1.10362",
+                            "Publication": "AAAI Conference on Artificial Intelligence",
+                            "Publisher": "AAAI Conference on Artificial Intelligence",
+                            "Abstract": "We describe a simple neural language model that relies only on character-level inputs. Predictions are still made at the word-level. Our model employs a convolutional neural network (CNN) and a highway net work over characters, whose output is given to a long short-term memory (LSTM) recurrent neural network language model (RNN-LM). On the English Penn Treebank the model is on par with the existing state-of-the-art despite having 60% fewer parameters. On languages with rich morphology (Arabic, Czech, French, German, Spanish, Russian), the model outperforms word-level/morpheme-level LSTM baselines, again with fewer parameters. The results suggest that on many languages, character inputs are sufficient for language modeling. Analysis of word representations obtained from the character composition part of the model reveals that the model is able to encode, from characters only, both semantic and orthographic information."
+                        },
+                        {
+                            "PaperTitle": "A large annotated corpus for learning natural language inference",
+                            "Authors": [
+                                "Samuel R. Bowman",
+                                "Gabor Angeli",
+                                "Christopher Potts",
+                                "Christopher D. Manning"
+                            ],
+                            "PublicationYear": "2015",
+                            "DOI": "10.18653/v1/D15-1075",
+                            "Publication": "Conference on Empirical Methods in Natural Language Processing",
+                            "Publisher": "Conference on Empirical Methods in Natural Language Processing",
+                            "Abstract": "Understanding entailment and contradiction is fundamental to understanding natural language, and inference about entailment and contradiction is a valuable testing ground for the development of semantic representations. However, machine learning research in this area has been dramatically limited by the lack of large-scale resources. To address this, we introduce the Stanford Natural Language Inference corpus, a new, freely available collection of labeled sentence pairs, written by humans doing a novel grounded task based on image captioning. At 570K pairs, it is two orders of magnitude larger than all other resources of its type. This increase in scale allows lexicalized classifiers to outperform some sophisticated existing entailment models, and it allows a neural network-based model to perform competitively on natural language inference benchmarks for the first time."
+                        },
+                        {
+                            "PaperTitle": "Finding Function in Form: Compositional Character Models for Open Vocabulary Word Representation",
+                            "Authors": [
+                                "Wang Ling",
+                                "Chris Dyer",
+                                "A. Black",
+                                "Isabel Trancoso",
+                                "Ramón Fernández Astudillo",
+                                "Silvio Amir",
+                                "Luís Marujo",
+                                "Tiago Luís"
+                            ],
+                            "PublicationYear": "2015",
+                            "DOI": "10.18653/v1/D15-1176",
+                            "Publication": "Conference on Empirical Methods in Natural Language Processing",
+                            "Publisher": "Conference on Empirical Methods in Natural Language Processing",
+                            "Abstract": "We introduce a model for constructing vector representations of words by composing characters using bidirectional LSTMs. Relative to traditional word representation models that have independent vectors for each word type, our model requires only a single vector per character type and a fixed set of parameters for the compositional model. Despite the compactness of this model and, more importantly, the arbitrary nature of the form‐function relationship in language, our “composed” word representations yield state-of-the-art results in language modeling and part-of-speech tagging. Benefits over traditional baselines are particularly pronounced in morphologically rich languages (e.g., Turkish)."
+                        },
+                        {
+                            "PaperTitle": "End-to-end learning of semantic role labeling using recurrent neural networks",
+                            "Authors": [
+                                "Jie Zhou",
+                                "W. Xu"
+                            ],
+                            "PublicationYear": "2015",
+                            "DOI": "10.3115/v1/P15-1109",
+                            "Publication": "Annual Meeting of the Association for Computational Linguistics",
+                            "Publisher": "Annual Meeting of the Association for Computational Linguistics",
+                            "Abstract": "Semantic role labeling (SRL) is one of the basic natural language processing (NLP) problems. To this date, most of the successful SRL systems were built on top of some form of parsing results (Koomen et al., 2005; Palmer et al., 2010; Pradhan et al., 2013), where pre-defined feature templates over the syntactic structure are used. The attempts of building an end-to-end SRL learning system without using parsing were less successful (Collobert et al., 2011). In this work, we propose to use deep bi-directional recurrent network as an end-to-end system for SRL. We take only original text information as input feature, without using any syntactic knowledge. The proposed algorithm for semantic role labeling was mainly evaluated on CoNLL-2005 shared task and achieved F1 score of 81.07. This result outperforms the previous state-of-the-art system from the combination of different parsing trees or models. We also obtained the same conclusion with F1 = 81.27 on CoNLL2012 shared task. As a result of simplicity, our model is also computationally efficient that the parsing speed is 6.7k tokens per second. Our analysis shows that our model is better at handling longer sentences than traditional models. And the latent variables of our model implicitly capture the syntactic structure of a sentence."
+                        },
+                        {
+                            "PaperTitle": "GloVe: Global Vectors for Word Representation",
+                            "Authors": [
+                                "Jeffrey Pennington",
+                                "R. Socher",
+                                "Christopher D. Manning"
+                            ],
+                            "PublicationYear": "2014",
+                            "DOI": "10.3115/v1/D14-1162",
+                            "Publication": "Conference on Empirical Methods in Natural Language Processing",
+                            "Publisher": "Conference on Empirical Methods in Natural Language Processing",
+                            "Abstract": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new global logbilinear regression model that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods. Our model efficiently leverages statistical information by training only on the nonzero elements in a word-word cooccurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model produces a vector space with meaningful substructure, as evidenced by its performance of 75% on a recent word analogy task. It also outperforms related models on similarity tasks and named entity recognition."
+                        },
+                        {
+                            "PaperTitle": "Efficient Non-parametric Estimation of Multiple Embeddings per Word in Vector Space",
+                            "Authors": [
+                                "Arvind Neelakantan",
+                                "Jeevan Shankar",
+                                "Alexandre Passos",
+                                "A. McCallum"
+                            ],
+                            "PublicationYear": "2014",
+                            "DOI": "10.3115/v1/D14-1113",
+                            "Publication": "Conference on Empirical Methods in Natural Language Processing",
+                            "Publisher": "Conference on Empirical Methods in Natural Language Processing",
+                            "Abstract": "There is rising interest in vector-space word embeddings and their use in NLP, especially given recent methods for their fast estimation at very large scale. Nearly all this work, however, assumes a single vector per word type—ignoring polysemy and thus jeopardizing their usefulness for downstream tasks. We present an extension to the Skip-gram model that efficiently learns multiple embeddings per word type. It differs from recent related work by jointly performing word sense discrimination and embedding learning, by non-parametrically estimating the number of senses per word type, and by its efficiency and scalability. We present new state-of-the-art results in the word similarity in context task and demonstrate its scalability by training with one machine on a corpus of nearly 1 billion tokens in less than 6 hours."
+                        },
+                        {
+                            "PaperTitle": "On the Properties of Neural Machine Translation: Encoder–Decoder Approaches",
+                            "Authors": [
+                                "Kyunghyun Cho",
+                                "B. V. Merrienboer",
+                                "Dzmitry Bahdanau",
+                                "Yoshua Bengio"
+                            ],
+                            "PublicationYear": "2014",
+                            "DOI": "10.3115/v1/W14-4012",
+                            "Publication": "SSST@EMNLP",
+                            "Publisher": "",
+                            "Abstract": "Neural machine translation is a relatively new approach to statistical machine translation based purely on neural networks. The neural machine translation models often consist of an encoder and a decoder. The encoder extracts a fixed-length representation from a variable-length input sentence, and the decoder generates a correct translation from this representation. In this paper, we focus on analyzing the properties of the neural machine translation using two models; RNN Encoder--Decoder and a newly proposed gated recursive convolutional neural network. We show that the neural machine translation performs relatively well on short sentences without unknown words, but its performance degrades rapidly as the length of the sentence and the number of unknown words increase. Furthermore, we find that the proposed gated recursive convolutional network learns a grammatical structure of a sentence automatically."
+                        },
+                        {
+                            "PaperTitle": "One billion word benchmark for measuring progress in statistical language modeling",
+                            "Authors": [
+                                "Ciprian Chelba",
+                                "Tomas Mikolov",
+                                "M. Schuster",
+                                "Qi Ge",
+                                "T. Brants",
+                                "P. Koehn",
+                                "T. Robinson"
+                            ],
+                            "PublicationYear": "2013",
+                            "DOI": "10.21437/Interspeech.2014-564",
+                            "Publication": "Interspeech",
+                            "Publisher": "Interspeech",
+                            "Abstract": "We propose a new benchmark corpus to be used for measuring progress in statistical language modeling. With almost one billion words of training data, we hope this benchmark will be useful to quickly evaluate novel language modeling techniques, and to compare their contribution when combined with other advanced techniques. We show performance of several well-known types of language models, with the best results achieved with a recurrent neural network based language model. The baseline unpruned KneserNey 5-gram model achieves perplexity 67.6. A combination of techniques leads to 35% reduction in perplexity, or 10% reduction in cross-entropy (bits), over that baseline. The benchmark is available as a code.google.com project; besides the scripts needed to rebuild the training/held-out data, it also makes available log-probability values for each word in each of ten held-out data sets, for each of the baseline n-gram models."
+                        },
+                        {
+                            "PaperTitle": "Easy Victories and Uphill Battles in Coreference Resolution",
+                            "Authors": [
+                                "Greg Durrett",
+                                "D. Klein"
+                            ],
+                            "PublicationYear": "2013",
+                            "DOI": "10.18653/v1/d13-1203",
+                            "Publication": "Conference on Empirical Methods in Natural Language Processing",
+                            "Publisher": "Conference on Empirical Methods in Natural Language Processing",
+                            "Abstract": "Classical coreference systems encode various syntactic, discourse, and semantic phenomena explicitly, using heterogenous features computed from hand-crafted heuristics. In contrast, we present a state-of-the-art coreference system that captures such phenomena implicitly, with a small number of homogeneous feature templates examining shallow properties of mentions. Surprisingly, our features are actually more effective than the corresponding hand-engineered ones at modeling these key linguistic phenomena, allowing us to win “easy victories” without crafted heuristics. These features are successful on syntax and discourse; however, they do not model semantic compatibility well, nor do we see gains from experiments with shallow semantic features from the literature, suggesting that this approach to semantics is an “uphill battle.” Nonetheless, our final system 1 outperforms the Stanford system (Lee et al. (2011), the winner of the CoNLL 2011 shared task) by 3.5% absolute on the CoNLL metric and outperforms the IMS system (Bj¨ orkelund and Farkas (2012), the best publicly available English coreference system) by 1.9% absolute."
+                        },
+                        {
+                            "PaperTitle": "Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank",
+                            "Authors": [
+                                "R. Socher",
+                                "Alex Perelygin",
+                                "Jean Wu",
+                                "Jason Chuang",
+                                "Christopher D. Manning",
+                                "A. Ng",
+                                "Christopher Potts"
+                            ],
+                            "PublicationYear": "2013",
+                            "DOI": "10.18653/v1/d13-1170",
+                            "Publication": "Conference on Empirical Methods in Natural Language Processing",
+                            "Publisher": "Conference on Empirical Methods in Natural Language Processing",
+                            "Abstract": "Semantic word spaces have been very useful but cannot express the meaning of longer phrases in a principled way. Further progress towards understanding compositionality in tasks such as sentiment detection requires richer supervised training and evaluation resources and more powerful models of composition. To remedy this, we introduce a Sentiment Treebank. It includes fine grained sentiment labels for 215,154 phrases in the parse trees of 11,855 sentences and presents new challenges for sentiment compositionality. To address them, we introduce the Recursive Neural Tensor Network. When trained on the new treebank, this model outperforms all previous methods on several metrics. It pushes the state of the art in single sentence positive/negative classification from 80% up to 85.4%. The accuracy of predicting fine-grained sentiment labels for all phrases reaches 80.7%, an improvement of 9.7% over bag of features baselines. Lastly, it is the only model that can accurately capture the effects of negation and its scope at various tree levels for both positive and negative phrases."
+                        },
+                        {
+                            "PaperTitle": "Natural Language Processing (Almost) from Scratch",
+                            "Authors": [
+                                "R. Collobert",
+                                "J. Weston",
+                                "L. Bottou",
+                                "Michael Karlen",
+                                "K. Kavukcuoglu",
+                                "Pavel P. Kuksa"
+                            ],
+                            "PublicationYear": "2011",
+                            "DOI": "10.5555/1953048.2078186",
+                            "Publication": "Journal of machine learning research",
+                            "Publisher": "Journal of machine learning research",
+                            "Abstract": "We propose a unified neural network architecture and learning algorithm that can be applied to various natural language processing tasks including part-of-speech tagging, chunking, named entity recognition, and semantic role labeling. This versatility is achieved by trying to avoid task-specific engineering and therefore disregarding a lot of prior knowledge. Instead of exploiting man-made input features carefully optimized for each task, our system learns internal representations on the basis of vast amounts of mostly unlabeled training data. This work is then used as a basis for building a freely available tagging system with good performance and minimal computational requirements."
+                        },
+                        {
+                            "PaperTitle": "The Proposition Bank: An Annotated Corpus of Semantic Roles",
+                            "Authors": [
+                                "Martha Palmer",
+                                "Paul R. Kingsbury",
+                                "D. Gildea"
+                            ],
+                            "PublicationYear": "2005",
+                            "DOI": "10.1162/0891201053630264",
+                            "Publication": "International Conference on Computational Logic",
+                            "Publisher": "International Conference on Computational Logic",
+                            "Abstract": "The Proposition Bank project takes a practical approach to semantic representation, adding a layer of predicate-argument information, or semantic role labels, to the syntactic structures of the Penn Treebank. The resulting resource can be thought of as shallow, in that it does not represent coreference, quantification, and many other higher-order phenomena, but also broad, in that it covers every instance of every verb in the corpus and allows representative statistics to be calculated. We discuss the criteria used to define the sets of semantic roles used in the annotation process and to analyze the frequency of syntactic/semantic alternations in the corpus. We describe an automatic system for semantic role tagging trained on the corpus and discuss the effect on its performance of various types of information, including a comparison of full syntactic parsing with a flat representation and the contribution of the empty trace categories of the treebank."
+                        },
+                        {
+                            "PaperTitle": "Introduction to the CoNLL-2003 Shared Task: Language-Independent Named Entity Recognition",
+                            "Authors": [
+                                "E. Tjong Kim Sang",
+                                "F. D. Meulder"
+                            ],
+                            "PublicationYear": "2003",
+                            "DOI": "10.3115/1119176.1119195",
+                            "Publication": "Conference on Computational Natural Language Learning",
+                            "Publisher": "Conference on Computational Natural Language Learning",
+                            "Abstract": "We describe the CoNLL-2003 shared task: language-independent named entity recognition. We give background information on the data sets (English and German) and the evaluation method, present a general overview of the systems that have taken part in the task and discuss their performance."
+                        },
+                        {
+                            "PaperTitle": "Long Short-Term Memory",
+                            "Authors": [
+                                "Sepp Hochreiter",
+                                "J. Schmidhuber"
+                            ],
+                            "PublicationYear": "1997",
+                            "DOI": "10.1162/neco.1997.9.8.1735",
+                            "Publication": "Neural Computation",
+                            "Publisher": "Neural Computation",
+                            "Abstract": ""
+                        },
+                        {
+                            "PaperTitle": "Using a Semantic Concordance for Sense Identification",
+                            "Authors": [
+                                "G. Miller",
+                                "M. Chodorow",
+                                "S. Landes",
+                                "C. Leacock",
+                                "Robert G. Thomas"
+                            ],
+                            "PublicationYear": "1994",
+                            "DOI": "10.3115/1075812.1075866",
+                            "Publication": "Human Language Technology - The Baltic Perspectiv",
+                            "Publisher": "Human Language Technology - The Baltic Perspectiv",
+                            "Abstract": "This paper proposes benchmarks for systems of automatic sense identification. A textual corpus in which open-class words had been tagged both syntactically and semantically was used to explore three statistical strategies for sense identification: a guessing heuristic, a most-frequent heuristic, and a co-occurrence heuristic. When no information about sense-frequencies was available, the guessing heuristic using the numbers of alternative senses in WordNet was correct 45% of the time. When statistics for sense-frequencies were derived from a semantic concordance, the assumption that each word is used in its most frequently occurring sense was correct 69% of the time; when that figure was calculated for polysemous words alone, it dropped to 58%. And when a co-occurrence heuristic took advantage of prior occurrences of words together in the same sentences, little improvement was observed. The semantic concordance is still too small to estimate the potential limits of a co-occurrence heuristic."
+                        },
+                        {
+                            "PaperTitle": "Dropout: a simple way to prevent neural networks from overfitting",
+                            "Authors": [
+                                "Nitish Srivastava",
+                                "Geoffrey E. Hinton",
+                                "A. Krizhevsky",
+                                "I. Sutskever",
+                                "R. Salakhutdinov"
+                            ],
+                            "PublicationYear": "2014",
+                            "DOI": "10.5555/2627435.2670313",
+                            "Publication": "Journal of machine learning research",
+                            "Publisher": "Journal of machine learning research",
+                            "Abstract": ""
+                        }
+                    ]
                 },
                 {
                     "PaperTitle": "Universal Language Model Fine-tuning for Text Classification",
@@ -55895,7 +56504,7 @@
                             "Abstract": "AbstractVector‐based models of word meaning have become increasingly popular in cognitive science. The appeal of these models lies in their ability to represent meaning simply by using distributional information under the assumption that words occurring within similar contexts are semantically similar. Despite their widespread use, vector‐based models are typically directed at representing words in isolation, and methods for constructing representations for phrases or sentences have received little attention in the literature. This is in marked contrast to experimental evidence (e.g., in sentential priming) suggesting that semantic similarity is more complex than simply a relation between isolated words. This article proposes a framework for representing the meaning of word combinations in vector space. Central to our approach is vector composition, which we operationalize in terms of additive and multiplicative functions. Under this framework, we introduce a wide range of composition models that we evaluate empirically on a phrase similarity task."
                         },
                         {
-                            "PaperTitle": "Large scale image annotation: learning to rank with joint word-image embeddings",
+                            "PaperTitle": "Large scale image annotation: learning to rank with joint word-image embeddings",
                             "Authors": [
                                 "Jason Weston",
                                 "Samy Bengio",
@@ -56812,7 +57421,7 @@
                                 "Wang Ling",
                                 "Chris Dyer",
                                 "A. Black",
-                                "I. Trancoso",
+                                "Isabel Trancoso",
                                 "Ramón Fernández Astudillo",
                                 "Silvio Amir",
                                 "Luís Marujo",
@@ -57992,6 +58601,19 @@
                             "DOI": "10.1145/1008992.1009009",
                             "Publication": "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
                             "Publisher": "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+                            "Abstract": ""
+                        },
+                        {
+                            "PaperTitle": "The Google file system",
+                            "Authors": [
+                                "Sanjay Ghemawat",
+                                "Howard Gobioff",
+                                "Shun-Tak Leung"
+                            ],
+                            "PublicationYear": "2003",
+                            "DOI": "10.1145/1165389.945450",
+                            "Publication": "",
+                            "Publisher": "",
                             "Abstract": ""
                         },
                         {
@@ -59642,6 +60264,22 @@
                             "Abstract": ""
                         },
                         {
+                            "PaperTitle": "Toward an Architecture for Never-Ending Language Learning",
+                            "Authors": [
+                                "Andrew Carlson",
+                                "J. Betteridge",
+                                "B. Kisiel",
+                                "Burr Settles",
+                                "Estevam R. Hruschka",
+                                "Tom M. Mitchell"
+                            ],
+                            "PublicationYear": "2010",
+                            "DOI": "10.1609/aaai.v24i1.7519",
+                            "Publication": "AAAI Conference on Artificial Intelligence",
+                            "Publisher": "AAAI Conference on Artificial Intelligence",
+                            "Abstract": "We consider here the problem of building a never-ending language learner; that is, an intelligent computer agent that runs forever and that each day must (1) extract, or read, information from the web to populate a growing structured knowledge base, and (2) learn to perform this task better than on the previous day. In particular, we propose an approach and a set of design principles for such an agent, describe a partial implementation of such a system that has already learned to extract a knowledge base containing over 242,000 beliefs with an estimated precision of 74% after running for 67 days, and discuss lessons learned from this preliminary attempt to build a never-ending learning agent."
+                        },
+                        {
                             "PaperTitle": "Stacked Denoising Autoencoders: Learning Useful Representations in a Deep Network with a Local Denoising Criterion",
                             "Authors": [
                                 "Pascal Vincent",
@@ -60718,7 +61356,7 @@
                             "Abstract": "Techniques for partitioning objects into optimally homogeneous groups on the basis of empirical measures of similarity among those objects have received increasing attention in several different fields. This paper develops a useful correspondence between any hierarchical system of such clusters, and a particular type of distance measure. The correspondence gives rise to two methods of clustering that are computationally rapid and invariant under monotonic transformations of the data. In an explicitly defined sense, one method forms clusters that are optimally “connected,” while the other forms clusters that are optimally “compact.”"
                         },
                         {
-                            "PaperTitle": "Evaluation of Item-Based Top-<i>N</i> Recommendation Algorithms",
+                            "PaperTitle": "Evaluation of Item-Based Top-N Recommendation Algorithms",
                             "Authors": [
                                 "George Karypis"
                             ],
@@ -61094,7 +61732,7 @@
                             "Abstract": "AbstractThis report describes the results of automatic processing of a large number of scientific papers according to a rigorously defined criterion of coupling. The population of papers under study was ordered into groups that satisfy the stated criterion of interrelation. An examination of the papers that constitute the groups shows a high degree of logical correlation."
                         },
                         {
-                            "PaperTitle": "A Gene Expression Map for\n                    <i>Caenorhabditis elegans</i>",
+                            "PaperTitle": "A Gene Expression Map for Caenorhabditis elegans",
                             "Authors": [
                                 "Stuart K. Kim",
                                 "Jim Lund",
@@ -61152,7 +61790,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Clusters and maps of science journals based on bi‐connected graphs in <i>Journal Citation Reports</i>",
+                            "PaperTitle": "Clusters and maps of science journals based on bi‐connected graphs in Journal Citation Reports",
                             "Authors": [
                                 "Loet Leydesdorff"
                             ],
@@ -61351,7 +61989,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Author cocitation analysis and Pearson's <i>r</i>",
+                            "PaperTitle": "Author cocitation analysis and Pearson's r",
                             "Authors": [
                                 "Howard D. White"
                             ],
@@ -68695,7 +69333,7 @@
                             "Abstract": "Since 1984, when Cole and Zuckerman referred to gender differences in productivity among academic scientists as a puzzle, sociologists have sought to explain these differences by incorporating primarily institutional-level factors. In addition to these factors, the author contends that an undertheorized and heretofore unmeasured concept—the extent of research specialization—can also help explain the process by which gender affects research productivity. Although some researchers have examined areas of specialization, the extent of research specialization has been completely neglected in studies of academic careers. Using a probability sample of academics in two disciplines (sociology and linguistics), primary data collection, and simultaneous equation modeling, the author finds that the extent of research specialization is a critical intervening variable: Women specialize less than men and thereby lose out on an important means of increasing their productivity."
                         },
                         {
-                            "PaperTitle": "Can scientific journals be classified in terms of aggregated journal‐journal citation relations using the <i>Journal Citation Reports</i>?",
+                            "PaperTitle": "Can scientific journals be classified in terms of aggregated journal‐journal citation relations using the Journal Citation Reports?",
                             "Authors": [
                                 "Loet Leydesdorff"
                             ],
@@ -70002,11 +70640,11 @@
                         {
                             "PaperTitle": "The large-scale organization of metabolic networks",
                             "Authors": [
-                                "Hawoong Jeong",
-                                "B. Tombor",
-                                "Réka Albert",
-                                "Z. Oltvai",
-                                "A. Barabási"
+                                "Jeong H",
+                                "Tombor B",
+                                "Albert R",
+                                "Oltvai Z N",
+                                "Barabási A"
                             ],
                             "PublicationYear": "2000",
                             "DOI": "10.1038/35036627",
@@ -70382,7 +71020,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Maximum Likelihood from Incomplete Data Via the\n                    <i>EM</i>\n                    Algorithm",
+                            "PaperTitle": "Maximum Likelihood from Incomplete Data Via the EM Algorithm",
                             "Authors": [
                                 "A. P. Dempster",
                                 "N. M. Laird",
@@ -70408,7 +71046,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Reinforcement Learning:  A Survey",
+                            "PaperTitle": "Reinforcement Learning: A Survey",
                             "Authors": [
                                 "L. P. Kaelbling",
                                 "M. L. Littman",
@@ -70812,7 +71450,7 @@
                     "Abstract": "Complex networks are studied across many fields of science. To uncover their structural design principles, we defined “network motifs,” patterns of interconnections occurring in complex networks at numbers that are significantly higher than those in randomized networks. We found such motifs in networks from biochemistry, neurobiology, ecology, and engineering. The motifs shared by ecological food webs were distinct from the motifs shared by the genetic networks of Escherichia coli and Saccharomyces cerevisiae or from those found in the World Wide Web. Similar motifs were found in networks that perform information processing, even though they describe elements as different as biomolecules within a cell and synaptic connections between neurons in Caenorhabditis elegans . Motifs may thus define universal classes of networks. This approach may uncover the basic building blocks of most networks."
                 },
                 {
-                    "PaperTitle": "Practical method to reclassify Web of Science articles into unique                     subject categories and broad disciplines",
+                    "PaperTitle": "Practical method to reclassify Web of Science articles into unique subject categories and broad disciplines",
                     "Authors": [
                         "Staša Milojević"
                     ],
@@ -73268,7 +73906,7 @@
                             "Authors": [
                                 "Tomas Mikolov",
                                 "Stefan Kombrink",
-                                "L. Burget",
+                                "Lukáš Burget",
                                 "J. Černocký",
                                 "S. Khudanpur"
                             ],
@@ -73319,7 +73957,7 @@
                             "Authors": [
                                 "Tomas Mikolov",
                                 "M. Karafiát",
-                                "L. Burget",
+                                "Lukáš Burget",
                                 "J. Černocký",
                                 "S. Khudanpur"
                             ],
@@ -74829,7 +75467,7 @@
                                 "Wang Ling",
                                 "Chris Dyer",
                                 "A. Black",
-                                "I. Trancoso",
+                                "Isabel Trancoso",
                                 "Ramón Fernández Astudillo",
                                 "Silvio Amir",
                                 "Luís Marujo",
@@ -78175,7 +78813,7 @@
                             "Authors": [
                                 "Tomas Mikolov",
                                 "M. Karafiát",
-                                "L. Burget",
+                                "Lukáš Burget",
                                 "J. Černocký",
                                 "S. Khudanpur"
                             ],
@@ -78238,7 +78876,7 @@
                                 "Ramón Fernández Astudillo",
                                 "Chris Dyer",
                                 "A. Black",
-                                "I. Trancoso",
+                                "Isabel Trancoso",
                                 "Chu-Cheng Lin"
                             ],
                             "PublicationYear": "2015",
@@ -78458,7 +79096,7 @@
                                 "Wang Ling",
                                 "Chris Dyer",
                                 "A. Black",
-                                "I. Trancoso"
+                                "Isabel Trancoso"
                             ],
                             "PublicationYear": "2015",
                             "DOI": "10.3115/v1/N15-1142",
@@ -80596,7 +81234,7 @@
                                 "Tomas Mikolov",
                                 "Anoop Deoras",
                                 "Daniel Povey",
-                                "L. Burget",
+                                "Lukáš Burget",
                                 "J. Černocký"
                             ],
                             "PublicationYear": "2011",
@@ -80611,7 +81249,7 @@
                                 "Tomas Mikolov",
                                 "Anoop Deoras",
                                 "Stefan Kombrink",
-                                "L. Burget",
+                                "Lukáš Burget",
                                 "J. Černocký"
                             ],
                             "PublicationYear": "2011",
@@ -80625,7 +81263,7 @@
                             "Authors": [
                                 "Tomas Mikolov",
                                 "Stefan Kombrink",
-                                "L. Burget",
+                                "Lukáš Burget",
                                 "J. Černocký",
                                 "S. Khudanpur"
                             ],
@@ -80829,7 +81467,7 @@
                             "Authors": [
                                 "Tomas Mikolov",
                                 "M. Karafiát",
-                                "L. Burget",
+                                "Lukáš Burget",
                                 "J. Černocký",
                                 "S. Khudanpur"
                             ],
@@ -82771,7 +83409,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Multiplicative latent factor models for description and prediction of social networks",
+                            "PaperTitle": "Multiplicative latent factor models for description and prediction of social networks",
                             "Authors": [
                                 "Peter D. Hoff"
                             ],
@@ -85953,7 +86591,7 @@
                                 "Tomas Mikolov",
                                 "Anoop Deoras",
                                 "Stefan Kombrink",
-                                "L. Burget",
+                                "Lukáš Burget",
                                 "J. Černocký"
                             ],
                             "PublicationYear": "2011",
@@ -86126,7 +86764,7 @@
                             "Abstract": "The family of decision tree learning algorithms is among the most widespread and studied. Motivated by the desire to develop learning algorithms that can generalize when learning highly varying functions such as those presumably needed to achieve artificial intelligence, we study some theoretical limitations of decision trees. We demonstrate formally that they can be seriously hurt by the curse of dimensionality in a sense that is a bit different from other nonparametric statistical methods, but most importantly, that they cannot generalize to variations not seen in the training set. This is because a decision tree creates a partition of the input space and needs at least one example in each of the regions associated with a leaf to make a sensible prediction in that region. A better understanding of the fundamental reasons for this limitation suggests that one should use forests or even deeper architectures instead of trees, which provide a form of distributed representation and can generalize to variations not encountered in the training data."
                         },
                         {
-                            "PaperTitle": "Large scale image annotation: learning to rank with joint word-image embeddings",
+                            "PaperTitle": "Large scale image annotation: learning to rank with joint word-image embeddings",
                             "Authors": [
                                 "J. Weston",
                                 "Samy Bengio",
@@ -90267,7 +90905,7 @@
                         {
                             "PaperTitle": "8. Predictive Inference: An Introduction",
                             "Authors": [
-                                "Ian R. Dunsmore",
+                                "I. Dunsmore",
                                 "S. Geisser"
                             ],
                             "PublicationYear": "1995",
@@ -90354,7 +90992,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Optimally sparse representation in general (nonorthogonal) dictionaries via ℓ\n            <sup>1</sup>\n            minimization",
+                            "PaperTitle": "Optimally sparse representation in general (nonorthogonal) dictionaries via ℓ 1 minimization",
                             "Authors": [
                                 "David L. Donoho",
                                 "Michael Elad"
@@ -90426,7 +91064,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "For most large underdetermined systems of linear equations the minimal 𝓁<sub>1</sub>‐norm solution is also the sparsest solution",
+                            "PaperTitle": "For most large underdetermined systems of linear equations the minimal 𝓁1‐norm solution is also the sparsest solution",
                             "Authors": [
                                 "David L. Donoho"
                             ],
@@ -90437,7 +91075,7 @@
                             "Abstract": "AbstractWe consider linear equationsy= Φxwhereyis a given vector in ℝnand Φ is a givenn×mmatrix withn&lt;m≤ τn, and we wish to solve forx∈ ℝm. We suppose that the columns of Φ are normalized to the unit 𝓁2‐norm, and we place uniform measure on such Φ. We prove the existence of ρ = ρ(τ) &gt; 0 so that for largenand for all Φ's except a negligible fraction, the following property holds:For every y having a representation y= Φx0by a coefficient vector x0∈ ℝmwith fewer than ρ · n nonzeros, the solution x1of the𝓁1‐minimization problemis unique and equal to x0. In contrast, heuristic attempts to sparsely solve such systems—greedy algorithms and thresholding—perform poorly in this challenging setting. The techniques include the use of random proportional embeddings and almost‐spherical sections in Banach space theory, and deviation bounds for the eigenvalues of random Wishart matrices. © 2006 Wiley Periodicals, Inc."
                         },
                         {
-                            "PaperTitle": "Optimally sparse representation in general (nonorthogonal) dictionaries via ℓ\n            <sup>1</sup>\n            minimization",
+                            "PaperTitle": "Optimally sparse representation in general (nonorthogonal) dictionaries via ℓ 1 minimization",
                             "Authors": [
                                 "David L. Donoho",
                                 "Michael Elad"
@@ -94844,7 +95482,7 @@
                             "Abstract": "Recommender systems are being widely applied in many application settings to suggest products, services, and information items to potential consumers. Collaborative filtering, the most successful recommendation approach, makes recommendations based on past transactions and feedback from consumers sharing similar interests. A major problem limiting the usefulness of collaborative filtering is the sparsity problem, which refers to a situation in which transactional or feedback data is sparse and insufficient to identify similarities in consumer interests. In this article, we propose to deal with this sparsity problem by applying an associative retrieval framework and related spreading activation algorithms to explore transitive associations among consumers through their past transactions and feedback. Such transitive associations are a valuable source of information to help infer consumer interests and can be explored to deal with the sparsity problem. To evaluate the effectiveness of our approach, we have conducted an experimental study using a data set from an online bookstore. We experimented with three spreading activation algorithms including a constrained Leaky Capacitor algorithm, a branch-and-bound serial symbolic search algorithm, and a Hopfield net parallel relaxation search algorithm. These algorithms were compared with several collaborative filtering approaches that do not consider the transitive associations: a simple graph search approach, two variations of the user-based approach, and an item-based approach. Our experimental results indicate that spreading activation-based approaches significantly outperformed the other collaborative filtering methods as measured by recommendation precision, recall, the F-measure, and the rank score. We also observed the over-activation effect of the spreading activation approach, that is, incorporating transitive associations with past transactional data that is not sparse may \"dilute\" the data used to infer user preferences and lead to degradation in recommendation performance."
                         },
                         {
-                            "PaperTitle": "Evaluation of Item-Based Top-\n            <i>N</i>\n            Recommendation Algorithms",
+                            "PaperTitle": "Evaluation of Item-Based Top- N Recommendation Algorithms",
                             "Authors": [
                                 "George Karypis"
                             ],
@@ -95625,7 +96263,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "The Diameter of a Scale-Free Random\nGraph",
+                            "PaperTitle": "The Diameter of a Scale-Free Random Graph",
                             "Authors": [
                                 "B. Bollobás",
                                 "O. Riordan"
@@ -96788,11 +97426,11 @@
                         {
                             "PaperTitle": "The large-scale organization of metabolic networks",
                             "Authors": [
-                                "Hawoong Jeong",
-                                "B. Tombor",
-                                "Réka Albert",
-                                "Z. Oltvai",
-                                "A. Barabási"
+                                "Jeong H",
+                                "Tombor B",
+                                "Albert R",
+                                "Oltvai Z N",
+                                "Barabási A"
                             ],
                             "PublicationYear": "2000",
                             "DOI": "10.1038/35036627",
@@ -103292,7 +103930,7 @@
                             "Abstract": "Abstract Background Recent advances with high-throughput methods in life-science research have increased the need for automatized data analysis and visual exploration techniques. Sophisticated bioinformatics tools are essential to deduct biologically meaningful interpretations from the large amount of experimental data, and help to understand biological processes. Results We present VANTED, a tool for the v isualization and a nalysis of n etworks with related e xperimental d ata. Data from large-scale biochemical experiments is uploaded into the software via a Microsoft Excel-based form. Then it can be mapped on a network that is either drawn with the tool itself, downloaded from the KEGG Pathway database, or imported using standard network exchange formats. Transcript, enzyme, and metabolite data can be presented in the context of their underlying networks, e. g. metabolic pathways or classification hierarchies. Visualization and navigation methods support the visual exploration of the data-enriched networks. Statistical methods allow analysis and comparison of multiple data sets such as different developmental stages or genetically different lines. Correlation networks can be automatically generated from the data and substances can be clustered according to similar behavior over time. As examples, metabolite profiling and enzyme activity data sets have been visualized in different metabolic maps, correlation networks have been generated and similar time patterns detected. Some relationships between different metabolites were discovered which are in close accordance with the literature. Conclusion VANTED greatly helps researchers in the analysis and interpretation of biochemical data, and thus is a useful tool for modern biological research. VANTED as a Java Web Start Application including a user guide and example data sets is available free of charge at http://vanted.ipk-gatersleben.de."
                         },
                         {
-                            "PaperTitle": "P<scp>atika</scp>: an integrated visual environment\nfor collaborative construction and analysis of cellular\npathways",
+                            "PaperTitle": "Patika: an integrated visual environment for collaborative construction and analysis of cellular pathways",
                             "Authors": [
                                 "E. Demir",
                                 "O. Babur",
@@ -103392,7 +104030,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "A Gene Expression Map for\n                    <i>Caenorhabditis elegans</i>",
+                            "PaperTitle": "A Gene Expression Map for Caenorhabditis elegans",
                             "Authors": [
                                 "Stuart K. Kim",
                                 "Jim Lund",
@@ -105843,7 +106481,7 @@
                         {
                             "PaperTitle": "On Decoloniality",
                             "Authors": [
-                                "Walter D Mignolo",
+                                "Walter D. Mignolo",
                                 "C. E. Walsh"
                             ],
                             "PublicationYear": "2018",
@@ -106338,6 +106976,17 @@
                             "Abstract": ""
                         },
                         {
+                            "PaperTitle": "The Matthew Effect in Science",
+                            "Authors": [
+                                "R. Merton"
+                            ],
+                            "PublicationYear": "1988",
+                            "DOI": "10.1111/J.1365-4362.1988.TB02325.X",
+                            "Publication": "International Journal of Dermatology",
+                            "Publisher": "International Journal of Dermatology",
+                            "Abstract": ""
+                        },
+                        {
                             "PaperTitle": "Institutional Structure: Constituting State, Society and the Individual",
                             "Authors": [
                                 "Kenneth Dauber",
@@ -106396,17 +107045,6 @@
                             "DOI": "10.2307/2094628",
                             "Publication": "",
                             "Publisher": "",
-                            "Abstract": ""
-                        },
-                        {
-                            "PaperTitle": "The Matthew Effect in Science",
-                            "Authors": [
-                                "R. Merton"
-                            ],
-                            "PublicationYear": "1968",
-                            "DOI": "10.1126/science.159.3810.56",
-                            "Publication": "Science",
-                            "Publisher": "Science",
                             "Abstract": ""
                         },
                         {
@@ -107136,6 +107774,17 @@
                             "Abstract": ""
                         },
                         {
+                            "PaperTitle": "The Matthew Effect in Science",
+                            "Authors": [
+                                "R. Merton"
+                            ],
+                            "PublicationYear": "1988",
+                            "DOI": "10.1111/J.1365-4362.1988.TB02325.X",
+                            "Publication": "International Journal of Dermatology",
+                            "Publisher": "International Journal of Dermatology",
+                            "Abstract": ""
+                        },
+                        {
                             "PaperTitle": "The market of symbolic goods",
                             "Authors": [
                                 "P. Bourdieu"
@@ -107144,17 +107793,6 @@
                             "DOI": "10.1016/0304-422X(85)90003-8",
                             "Publication": "",
                             "Publisher": "",
-                            "Abstract": ""
-                        },
-                        {
-                            "PaperTitle": "The Matthew Effect in Science",
-                            "Authors": [
-                                "R. Merton"
-                            ],
-                            "PublicationYear": "1968",
-                            "DOI": "10.1126/science.159.3810.56",
-                            "Publication": "Science",
-                            "Publisher": "Science",
                             "Abstract": ""
                         },
                         {
@@ -107194,7 +107832,7 @@
                     ]
                 },
                 {
-                    "PaperTitle": "Mapping the scattered field of research on higher education. A correlated topic model of 17,000 articles, 1991–2018",
+                    "PaperTitle": "Mapping the scattered field of research on higher education. A correlated topic model of 17,000 articles, 1991–2018",
                     "Authors": [
                         "Stijn Daenekindt",
                         "J. Huisman"
@@ -109433,7 +110071,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Semantic Author Name Disambiguation with Word Embeddings",
+                            "PaperTitle": "Semantic Author Name Disambiguation with Word Embeddings",
                             "Authors": [
                                 "Mark-Christoph Müller"
                             ],
@@ -109989,7 +110627,7 @@
                         {
                             "PaperTitle": "Convolutional Neural Network Architectures for Signals Supported on Graphs",
                             "Authors": [
-                                "Fernando Gama",
+                                "F. Gama",
                                 "A. Marques",
                                 "G. Leus",
                                 "Alejandro Ribeiro"
@@ -115706,7 +116344,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Superstar Extinction<sup>*</sup>",
+                            "PaperTitle": "Superstar Extinction*",
                             "Authors": [
                                 "Pierre Azoulay",
                                 "Joshua S. Graff Zivin",
@@ -116003,7 +116641,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Does the\n            <i>h</i>\n            index have predictive power?",
+                            "PaperTitle": "Does the h index have predictive power?",
                             "Authors": [
                                 "J. E. Hirsch"
                             ],
@@ -117404,10 +118042,10 @@
                                 "Radford M. Neal"
                             ],
                             "PublicationYear": "2006",
-                            "DOI": "10.1117/1.2819119",
-                            "Publication": "J. Electronic Imaging",
-                            "Publisher": "",
-                            "Abstract": ""
+                            "DOI": "10.1007/978-0-387-45528-0",
+                            "Publication": "Technometrics",
+                            "Publisher": "Technometrics",
+                            "Abstract": "Probability Distributions.- Linear Models for Regression.- Linear Models for Classification.- Neural Networks.- Kernel Methods.- Sparse Kernel Machines.- Graphical Models.- Mixture Models and EM.- Approximate Inference.- Sampling Methods.- Continuous Latent Variables.- Sequential Data.- Combining Models."
                         },
                         {
                             "PaperTitle": "Temporal associations and prior-list intrusions in free recall.",
@@ -117859,7 +118497,7 @@
                                 "Wang Ling",
                                 "Chris Dyer",
                                 "A. Black",
-                                "I. Trancoso",
+                                "Isabel Trancoso",
                                 "Ramón Fernández Astudillo",
                                 "Silvio Amir",
                                 "Luís Marujo",
@@ -121089,7 +121727,7 @@
                             "Abstract": "AbstractThere exist ample demonstrations that indicators of scholarly impact analogous to the citation‐based ISI Impact Factor can be derived from usage data; however, so far, usage can practically be recorded only at the level of distinct information services. This leads to community‐specific assessments of scholarly impact that are difficult to generalize to the global scholarly community. In contrast, the ISI Impact Factor is based on citation data and thereby represents the global community of scholarly authors. The objective of this study is to examine the effects of community characteristics on assessments of scholarly impact from usage. We define a journal Usage Impact Factor that mimics the definition of the Thomson Scientific ISI Impact Factor. Usage Impact Factor rankings are calculated on the basis of a large‐scale usage dataset recorded by the linking servers of the California State University system from 2003 to 2005. The resulting journal rankings are then compared to the Thomson Scientific ISI Impact Factor that is used as a reference indicator of general impact. Our results indicate that the particular scientific and demographic characteristics of a discipline have a strong effect on resulting usage‐based assessments of scholarly impact. In particular, we observed that as the number of graduate students and faculty increases in a particular discipline, Usage Impact Factor rankings will converge more strongly with the ISI Impact Factor."
                         },
                         {
-                            "PaperTitle": "What do we know about the <i>h</i> index?",
+                            "PaperTitle": "What do we know about the h index?",
                             "Authors": [
                                 "Lutz Bornmann",
                                 "Hans‐Dieter Daniel"
@@ -121165,7 +121803,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "The New and Improved Two-Sample <i>t</i> Test",
+                            "PaperTitle": "The New and Improved Two-Sample t Test",
                             "Authors": [
                                 "H.J. Keselman",
                                 "Abdul R. Othman",
@@ -123712,7 +124350,7 @@
                             "Abstract": "We examine acquisitions by multiunit chain organizations to determine why they acquire a particular target rather than others that are available to them and thus better understand chain growth. We advance experiential and vicarious learning processes as an explanation for chains' next spatial move. Our analysis of Ontario nursing home chains' acquisition location choices from 1971 to 1996 provides broad support for a learning perspective, demonstrating how experiential and vicarious processes shape and constrain the locations of chains' acquisitions. Experiential processes lead chains to replicate themselves by acquiring components geographically and organizationally similar to their own most recent and most similar prior acquisitions and their own current components. Vicarious processes lead chains to imitate location choices of other visible and comparable chains' most recent acquisitions, prior acquisitions nearest to potential targets, and their current components. Our study thus establishes organizational learning as a conceptual foundation for predicting the location of a chain's next acquisition and, more generally, the spatial expansion of chains over time."
                         },
                         {
-                            "PaperTitle": "Communication Patterns in an International Student Dormitory: A Modification of the “Small World” Method<sup>1</sup>",
+                            "PaperTitle": "Communication Patterns in an International Student Dormitory: A Modification of the “Small World” Method1",
                             "Authors": [
                                 "STEPHEN BOCHNER",
                                 "Eloise A. Buker",
@@ -124518,7 +125156,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Behavior of Current Divergences under<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mml:mrow><mml:msub><mml:mrow><mml:mi>SU</mml:mi></mml:mrow><mml:mrow><mml:mn>3</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mo>×</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi>SU</mml:mi></mml:mrow><mml:mrow><mml:mn>3</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:math>",
+                            "PaperTitle": "Behavior of Current Divergences underSU3×SU3",
                             "Authors": [
                                 "Murray Gell-Mann",
                                 "R. J. Oakes",
@@ -126415,6 +127053,22 @@
                             "Publication": "IEEE International Joint Conference on Neural Network",
                             "Publisher": "IEEE International Joint Conference on Neural Network",
                             "Abstract": ""
+                        },
+                        {
+                            "PaperTitle": "Toward an Architecture for Never-Ending Language Learning",
+                            "Authors": [
+                                "Andrew Carlson",
+                                "J. Betteridge",
+                                "B. Kisiel",
+                                "Burr Settles",
+                                "Estevam R. Hruschka",
+                                "Tom M. Mitchell"
+                            ],
+                            "PublicationYear": "2010",
+                            "DOI": "10.1609/aaai.v24i1.7519",
+                            "Publication": "AAAI Conference on Artificial Intelligence",
+                            "Publisher": "AAAI Conference on Artificial Intelligence",
+                            "Abstract": "We consider here the problem of building a never-ending language learner; that is, an intelligent computer agent that runs forever and that each day must (1) extract, or read, information from the web to populate a growing structured knowledge base, and (2) learn to perform this task better than on the previous day. In particular, we propose an approach and a set of design principles for such an agent, describe a partial implementation of such a system that has already learned to extract a knowledge base containing over 242,000 beliefs with an estimated precision of 74% after running for 67 days, and discuss lessons learned from this preliminary attempt to build a never-ending learning agent."
                         },
                         {
                             "PaperTitle": "Stacked Denoising Autoencoders: Learning Useful Representations in a Deep Network with a Local Denoising Criterion",
@@ -131220,7 +131874,7 @@
                                 "Tomas Mikolov",
                                 "Anoop Deoras",
                                 "Stefan Kombrink",
-                                "L. Burget",
+                                "Lukáš Burget",
                                 "J. Černocký"
                             ],
                             "PublicationYear": "2011",
@@ -131393,7 +132047,7 @@
                             "Abstract": "The family of decision tree learning algorithms is among the most widespread and studied. Motivated by the desire to develop learning algorithms that can generalize when learning highly varying functions such as those presumably needed to achieve artificial intelligence, we study some theoretical limitations of decision trees. We demonstrate formally that they can be seriously hurt by the curse of dimensionality in a sense that is a bit different from other nonparametric statistical methods, but most importantly, that they cannot generalize to variations not seen in the training set. This is because a decision tree creates a partition of the input space and needs at least one example in each of the regions associated with a leaf to make a sensible prediction in that region. A better understanding of the fundamental reasons for this limitation suggests that one should use forests or even deeper architectures instead of trees, which provide a form of distributed representation and can generalize to variations not encountered in the training data."
                         },
                         {
-                            "PaperTitle": "Large scale image annotation: learning to rank with joint word-image embeddings",
+                            "PaperTitle": "Large scale image annotation: learning to rank with joint word-image embeddings",
                             "Authors": [
                                 "J. Weston",
                                 "Samy Bengio",
@@ -134608,7 +135262,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Variations on probabilistic suffix trees: statistical modeling\n\n  and prediction of protein families",
+                            "PaperTitle": "Variations on probabilistic suffix trees: statistical modeling and prediction of protein families",
                             "Authors": [
                                 "Gill Bejerano",
                                 "Golan Yona"
@@ -134879,7 +135533,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "XLI. <i>On discordant observations</i>",
+                            "PaperTitle": "XLI. On discordant observations",
                             "Authors": [
                                 "F.Y. Edgeworth"
                             ],
@@ -136165,7 +136819,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "Recurrent Fusion of\n                    <i>TMPRSS2</i>\n                    and ETS Transcription Factor Genes in Prostate Cancer",
+                            "PaperTitle": "Recurrent Fusion of TMPRSS2 and ETS Transcription Factor Genes in Prostate Cancer",
                             "Authors": [
                                 "Scott A. Tomlins",
                                 "Daniel R. Rhodes",
@@ -138202,11 +138856,11 @@
                         {
                             "PaperTitle": "The large-scale organization of metabolic networks",
                             "Authors": [
-                                "Hawoong Jeong",
-                                "B. Tombor",
-                                "Réka Albert",
-                                "Z. Oltvai",
-                                "A. Barabási"
+                                "Jeong H",
+                                "Tombor B",
+                                "Albert R",
+                                "Oltvai Z N",
+                                "Barabási A"
                             ],
                             "PublicationYear": "2000",
                             "DOI": "10.1038/35036627",
@@ -143273,7 +143927,7 @@
                             "Abstract": "Abstract“Is there a biology of intelligence which is characteristic of the normal human nervous system?” Here we review 37 modern neuroimaging studies in an attempt to address this question posed by Halstead (1947) as he and other icons of the last century endeavored to understand how brain and behavior are linked through the expression of intelligence and reason. Reviewing studies from functional (i.e., functional magnetic resonance imaging, positron emission tomography) and structural (i.e., magnetic resonance spectroscopy, diffusion tensor imaging, voxel-based morphometry) neuroimaging paradigms, we report a striking consensus suggesting that variations in a distributed network predict individual differences found on intelligence and reasoning tasks. We describe this network as theParieto-Frontal Integration Theory(P-FIT). The P-FIT model includes, by Brodmann areas (BAs): the dorsolateral prefrontal cortex (BAs 6, 9, 10, 45, 46, 47), the inferior (BAs 39, 40) and superior (BA 7) parietal lobule, the anterior cingulate (BA 32), and regions within the temporal (BAs 21, 37) and occipital (BAs 18, 19) lobes. White matter regions (i.e., arcuate fasciculus) are also implicated. The P-FIT is examined in light of findings from human lesion studies, including missile wounds, frontal lobotomy/leukotomy, temporal lobectomy, and lesions resulting in damage to the language network (e.g., aphasia), as well as findings from imaging research identifying brain regions under significant genetic control. Overall, we conclude that modern neuroimaging techniques are beginning to articulate a biology of intelligence. We propose that the P-FIT provides a parsimonious account for many of the empirical observations, to date, which relate individual differences in intelligence test scores to variations in brain structure and function. Moreover, the model provides a framework for testing new hypotheses in future experimental designs."
                         },
                         {
-                            "PaperTitle": "D<scp>elta</scp>C<scp>on</scp>: A Principled Massive-Graph Similarity Function",
+                            "PaperTitle": "DeltaCon: A Principled Massive-Graph Similarity Function",
                             "Authors": [
                                 "Danai Koutra",
                                 "Joshua T. Vogelstein",
@@ -145336,7 +145990,7 @@
                             "Abstract": ""
                         },
                         {
-                            "PaperTitle": "D<scp>elta</scp>C<scp>on</scp>: A Principled Massive-Graph Similarity Function",
+                            "PaperTitle": "DeltaCon: A Principled Massive-Graph Similarity Function",
                             "Authors": [
                                 "Danai Koutra",
                                 "Joshua T. Vogelstein",
@@ -145967,17 +146621,6 @@
                             "Publication": "Physical review. E, Statistical, nonlinear, and soft matter physics",
                             "Publisher": "",
                             "Abstract": "We study the response of complex networks subject to attacks on vertices and edges. Several existing complex network models as well as real-world networks of scientific collaborations and Internet traffic are numerically investigated, and the network performance is quantitatively measured by the average inverse geodesic length and the size of the largest connected subgraph. For each case of attacks on vertices and edges, four different attacking strategies are used: removals by the descending order of the degree and the betweenness centrality, calculated for either the initial network or the current network during the removal procedure. It is found that the removals by the recalculated degrees and betweenness centralities are often more harmful than the attack strategies based on the initial network, suggesting that the network structure changes as important vertices or edges are removed. Furthermore, the correlation between the betweenness centrality and the degree in complex networks is studied."
-                        },
-                        {
-                            "PaperTitle": "Random Graphs, Second Edition",
-                            "Authors": [
-                                "B. Bollobás"
-                            ],
-                            "PublicationYear": "2001",
-                            "DOI": "10.1017/CBO9780511814068",
-                            "Publication": "Cambridge Studies in Advanced Mathematics",
-                            "Publisher": "Cambridge Studies in Advanced Mathematics",
-                            "Abstract": ""
                         },
                         {
                             "PaperTitle": "Immunization of complex networks.",

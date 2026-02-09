@@ -8,6 +8,7 @@ from typing import Dict, List, Optional
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from functools import wraps
+import re
 
 
 # Configuration
@@ -24,16 +25,23 @@ MAX_RETRIES = 3  # Maximum retry attempts for rate-limited requests
 USER_AGENT = "Research-Metadata-Tool/1.0 (mailto:research@example.com)"
 
 def clean_abstract(abstract: str) -> str:
-    """Remove JATS XML tags and clean up abstract text."""
+
     if not abstract or not isinstance(abstract, str):
         return ""
-    
-    import re
     # Remove JATS XML tags like <jats:p>, <jats:italic>, etc.
     clean_text = re.sub(r'<jats:[^>]+>', '', abstract)
     clean_text = re.sub(r'</jats:[^>]+>', '', clean_text)
     # Remove any remaining HTML/XML tags
     clean_text = re.sub(r'<[^>]+>', '', clean_text)
+    # Clean up extra whitespace
+    clean_text = re.sub(r'\s+', ' ', clean_text)
+    return clean_text.strip()
+
+def clean_paper_title(title: str) -> str:
+    if not title or not isinstance(title, str):
+        return ""
+    # Remove HTML tags like <i>, <b>, <em>, etc.
+    clean_text = re.sub(r'<[^>]+>', '', title)
     # Clean up extra whitespace
     clean_text = re.sub(r'\s+', ' ', clean_text)
     return clean_text.strip()
@@ -141,7 +149,7 @@ async def get_paper_info_from_crossref_async(doi: str, session: aiohttp.ClientSe
                 abstract = clean_abstract(abstract)
             
             return {
-                "PaperTitle": title,
+                "PaperTitle": clean_paper_title(title),
                 "Authors": authors,
                 "PublicationYear": pub_year,
                 "DOI": doi,
@@ -232,7 +240,7 @@ async def get_references_from_semantic_scholar_async(doi: str, session: aiohttp.
                     abstract = clean_abstract(abstract)
 
                 ref_info = {
-                    "PaperTitle": ref.get('title', ''),
+                    "PaperTitle": clean_paper_title(ref.get('title', '')),
                     "Authors": [author.get('name', '') for author in ref.get('authors', [])] if ref.get('authors') else [],
                     "PublicationYear": str(ref.get('year')) if ref.get('year') else "",
                     "DOI": ref.get('externalIds', {}).get('DOI') if ref.get('externalIds') else "",
@@ -288,7 +296,7 @@ async def get_ref_of_refs_from_semantic_scholar_async(doi: str, session: aiohttp
                     abstract = clean_abstract(abstract)
         
                 ref_info = {
-                    "PaperTitle": ref.get('title', ''),
+                    "PaperTitle": clean_paper_title(ref.get('title', '')),
                     "Authors": [author.get('name', '') for author in ref.get('authors', [])] if ref.get('authors') else [],
                     "PublicationYear": str(ref.get('year')) if ref.get('year') else "",
                     "DOI": ref.get('externalIds', {}).get('DOI') if ref.get('externalIds') else "",
