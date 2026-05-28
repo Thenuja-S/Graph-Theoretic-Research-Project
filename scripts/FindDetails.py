@@ -1,17 +1,18 @@
 import requests
 import json
 import os
-import time
 import asyncio
 import aiohttp
 from typing import Dict, List, Optional
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from functools import wraps
+import re
 
 
 # Configuration
 OUTPUT_DIR = Path.cwd().parent / "IE-output"
+JSON_OUTPUT_DIR = Path.cwd().parent / "JSON-output"
 CROSSREF_BASE_URL = "https://api.crossref.org/works"
 SEMANTIC_SCHOLAR_BASE_URL = "https://api.semanticscholar.org/graph/v1"
 CROSSREF_BATCH_SIZE = 10  # Parallel requests for Crossref
@@ -20,7 +21,30 @@ REQUEST_TIMEOUT = 15  # seconds
 RATE_LIMIT_DELAY = 1.0  # seconds between batches (Crossref: 50 req/min = 1.2 sec/req)
 RETRY_DELAY = 5.0  # seconds to wait before retrying on 429
 MAX_RETRIES = 3  # Maximum retry attempts for rate-limited requests
+
 USER_AGENT = "Research-Metadata-Tool/1.0 (mailto:research@example.com)"
+SEMANTIC_API_KEY = os.getenv("SEMANTIC_API_KEY", "")
+def clean_abstract(abstract: str) -> str:
+
+    if not abstract or not isinstance(abstract, str):
+        return ""
+    # Remove JATS XML tags like <jats:p>, <jats:italic>, etc.
+    clean_text = re.sub(r'<jats:[^>]+>', '', abstract)
+    clean_text = re.sub(r'</jats:[^>]+>', '', clean_text)
+    # Remove any remaining HTML/XML tags
+    clean_text = re.sub(r'<[^>]+>', '', clean_text)
+    # Clean up extra whitespace
+    clean_text = re.sub(r'\s+', ' ', clean_text)
+    return clean_text.strip()
+
+def clean_paper_title(title: str) -> str:
+    if not title or not isinstance(title, str):
+        return ""
+    # Remove HTML tags like <i>, <b>, <em>, etc.
+    clean_text = re.sub(r'<[^>]+>', '', title)
+    # Clean up extra whitespace
+    clean_text = re.sub(r'\s+', ' ', clean_text)
+    return clean_text.strip()
 
 def safe_first_str(seq: Optional[List], default: str = "") -> str:
     if not seq or not isinstance(seq, list):
@@ -55,11 +79,25 @@ def is_blank_doi(doi: Optional[str]) -> bool:
 # ASYNC API FUNCTIONS FOR PARALLEL REQUESTS
 # ============================================================================
 
-async def fetch_json_async(session: aiohttp.ClientSession, url: str, params: Optional[Dict] = None, timeout: int = REQUEST_TIMEOUT, retry_count: int = 0) -> Optional[Dict]:
-    headers = {"User-Agent": USER_AGENT}
+async def fetch_json_async(
+    session: aiohttp.ClientSession,
+    url: str,
+    params: Optional[Dict] = None,
+    timeout: int = REQUEST_TIMEOUT,
+    retry_count: int = 0,
+    headers: Optional[Dict] = None,
+) -> Optional[Dict]:
+    merged_headers = {"User-Agent": USER_AGENT}
+    if headers:
+        merged_headers.update(headers)
     
     try:
-        async with session.get(url, params=params, headers=headers, timeout=aiohttp.ClientTimeout(total=timeout)) as response:
+        async with session.get(
+            url,
+            params=params,
+            headers=merged_headers,
+            timeout=aiohttp.ClientTimeout(total=timeout),
+        ) as response:
             if response.status == 200:
                 return await response.json()
             elif response.status == 429 and retry_count < MAX_RETRIES:
@@ -67,7 +105,14 @@ async def fetch_json_async(session: aiohttp.ClientSession, url: str, params: Opt
                 wait_time = RETRY_DELAY * (2 ** retry_count)
                 print(f"  -> Rate limited (429). Waiting {wait_time:.1f}s before retry {retry_count + 1}/{MAX_RETRIES}...")
                 await asyncio.sleep(wait_time)
-                return await fetch_json_async(session, url, params, timeout, retry_count + 1)
+                return await fetch_json_async(
+                    session,
+                    url,
+                    params=params,
+                    timeout=timeout,
+                    retry_count=retry_count + 1,
+                    headers=headers,
+                )
             else:
                 if response.status == 429:
                     print(f"  -> Rate limited (429) after {MAX_RETRIES} retries: {url}")
@@ -115,14 +160,23 @@ async def get_paper_info_from_crossref_async(doi: str, session: aiohttp.ClientSe
             
             # Extract publisher
             publisher = msg.get('publisher', '')
+
+            # Get Abstract if available
+            abstract = msg.get('abstract', '')
+
+            if abstract is None:    
+                abstract = ""
+            else:
+                abstract = clean_abstract(abstract)
             
             return {
-                "PaperTitle": title,
+                "PaperTitle": clean_paper_title(title),
                 "Authors": authors,
                 "PublicationYear": pub_year,
                 "DOI": doi,
                 "Publisher": publisher,
-                "Publication": publication
+                "Publication": publication,
+                "Abstract": abstract
             }
         return None
     except Exception as e:
@@ -184,10 +238,12 @@ async def check_authors_list_async(doi: str, session: aiohttp.ClientSession) -> 
 
 
 async def get_references_from_semantic_scholar_async(doi: str, session: aiohttp.ClientSession) -> List[Dict]:
+    headers = {"x-api-key": SEMANTIC_API_KEY} if SEMANTIC_API_KEY else None
     url = f"{SEMANTIC_SCHOLAR_BASE_URL}/paper/DOI:{doi}"
-    params = {"fields": "references,references.title,references.authors,references.year,references.externalIds,references.venue,references.publicationVenue"}
+    params = {"fields": "references,references.title,references.authors,references.year,references.externalIds,"
+    "references.venue,references.publicationVenue,references.abstract"}
     
-    data = await fetch_json_async(session, url, params=params)
+    data = await fetch_json_async(session, url, params=params, headers=headers)
     if not data:
         return await get_references_from_crossref_async(doi, session)
     
@@ -198,13 +254,21 @@ async def get_references_from_semantic_scholar_async(doi: str, session: aiohttp.
         if references_raw:
             references = []
             for ref in references_raw:
+                abstract = ref.get('abstract', '')
+
+                if abstract is None:
+                    abstract = ""
+                else:
+                    abstract = clean_abstract(abstract)
+
                 ref_info = {
-                    "PaperTitle": ref.get('title', ''),
+                    "PaperTitle": clean_paper_title(ref.get('title', '')),
                     "Authors": [author.get('name', '') for author in ref.get('authors', [])] if ref.get('authors') else [],
                     "PublicationYear": str(ref.get('year')) if ref.get('year') else "",
                     "DOI": ref.get('externalIds', {}).get('DOI') if ref.get('externalIds') else "",
                     "Publication": ref.get('venue', ''),
-                    "Publisher": ref.get('publicationVenue', {}).get('name') if ref.get('publicationVenue') else "",      
+                    "Publisher": ref.get('publicationVenue', {}).get('name') if ref.get('publicationVenue') else "",
+                    "Abstract": abstract,      
                 }
                 
                 if not is_blank_doi(ref_info["DOI"]):
@@ -231,10 +295,12 @@ async def get_references_from_semantic_scholar_async(doi: str, session: aiohttp.
 
 # callback to Sematic Socholar for References of References
 async def get_ref_of_refs_from_semantic_scholar_async(doi: str, session: aiohttp.ClientSession) -> List[Dict]:
+    headers = {"x-api-key": SEMANTIC_API_KEY} if SEMANTIC_API_KEY else None
     url = f"{SEMANTIC_SCHOLAR_BASE_URL}/paper/DOI:{doi}"
-    params = {"fields": "references,references.title,references.authors,references.year,references.externalIds,references.venue,references.publicationVenue"}
+    params = {"fields": "references,references.title,references.authors,references.year,"
+    "references.externalIds,references.venue,references.publicationVenue,references.abstract"}
     
-    data = await fetch_json_async(session, url, params=params)
+    data = await fetch_json_async(session, url, params=params, headers=headers)
     if not data:
         return await get_references_from_crossref_async(doi, session)
     
@@ -245,13 +311,21 @@ async def get_ref_of_refs_from_semantic_scholar_async(doi: str, session: aiohttp
         if references_raw:
             references = []
             for ref in references_raw:
+                abstract = ref.get('abstract', '')
+
+                if abstract is None:
+                    abstract = ""
+                else:
+                    abstract = clean_abstract(abstract)
+        
                 ref_info = {
-                    "PaperTitle": ref.get('title', ''),
+                    "PaperTitle": clean_paper_title(ref.get('title', '')),
                     "Authors": [author.get('name', '') for author in ref.get('authors', [])] if ref.get('authors') else [],
                     "PublicationYear": str(ref.get('year')) if ref.get('year') else "",
                     "DOI": ref.get('externalIds', {}).get('DOI') if ref.get('externalIds') else "",
                     "Publication": ref.get('venue', ''),
                     "Publisher": ref.get('publicationVenue', {}).get('name') if ref.get('publicationVenue') else "",      
+                    "Abstract": abstract
                 }
                 
                 if not is_blank_doi(ref_info["DOI"]):
@@ -348,7 +422,7 @@ async def process_references_async(references: List[Dict]) -> List[Dict]:
             if not doi or doi.strip() == "":
                 print("   Skipping reference with blank DOI.")
                 continue
-            
+            ref['Abstract'] = await get_abstract_semantic_scholar_async(doi, session)
             ref["References"] = await get_references_from_semantic_scholar_async(doi, session)
             enriched_references.append(ref)
             
@@ -389,7 +463,8 @@ def process_save_json_file(file_path: str) -> None:
             print(f"\n No data to save for file {file_path}")
             return
         # Save the updated JSON file
-        output_path = file_path.replace('.json', '_enriched.json')
+        output_filename = f"{Path(file_path).stem}_enriched.json"
+        output_path = Path(JSON_OUTPUT_DIR) / output_filename
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=4, ensure_ascii=False)
         
@@ -435,7 +510,52 @@ def check_authors_list(authors: Optional[List], doi: str) -> List[str]:
     except Exception as e:
         print(f"  -> Error fetching DOI {doi}: {e}")
         return []
+    
+# Get abstract using crossref if available
+async def get_abstract_cross_ref_async(doi: str, session: aiohttp.ClientSession) -> str:
+    url = f"{CROSSREF_BASE_URL}/{doi}"
+    
+    data = await fetch_json_async(session, url)
+    if not data:
+        return ""
+    
+    try:
+        if data.get('status') == 'ok' and 'message' in data:
+            msg = data['message']
+            abstract = msg.get('abstract', '')
 
+            if abstract is None:
+                return ""
+        
+            return clean_abstract(abstract)
+        else:
+            return ""
+            
+    except Exception as e:
+        print(f"  -> Error fetching abstract for DOI {doi}: {e}")
+        return ""   
+        
+# Get abstract using semantic scholar if available
+async def get_abstract_semantic_scholar_async(doi: str, session: aiohttp.ClientSession) -> str:
+    headers = {"x-api-key": SEMANTIC_API_KEY} if SEMANTIC_API_KEY else None
+    url = f"{SEMANTIC_SCHOLAR_BASE_URL}/paper/DOI:{doi}"
+    params = {"fields": "abstract"}
+    
+    data = await fetch_json_async(session, url, params=params, headers=headers)
+    if not data:
+        return await get_abstract_cross_ref_async(doi, session)
+    
+    try:
+        abstract = data.get('abstract', '')
+        if abstract is None:
+            return ""
+        
+        return clean_abstract(abstract)
+    
+    except Exception as e:
+        print(f"    -> Error fetching from Semantic Scholar: {e}")
+        return await get_abstract_cross_ref_async(doi, session)
+    
 def main():
 
     # Check if output directory exists
@@ -444,24 +564,8 @@ def main():
         return
     
     # Get all JSON files from output directory
-    json_files = list(Path(OUTPUT_DIR).glob("*.json"))
-    
-    if not json_files:
-        print(f" No JSON files found in '{OUTPUT_DIR}'")
-        return
-    
-    print(f"Found {len(json_files)} JSON file(s) in '{OUTPUT_DIR}'")
-    
-    # Process each file
-    for json_file in json_files:
-        # Skip already enriched files
-        if '_enriched' in json_file.name:
-            print(f"\nSkipping already enriched file: {json_file.name}")
-            continue
-        
-        process_save_json_file(str(json_file))
-        time.sleep(1)  # Delay between files to respect rate limits
-    
+    process_save_json_file(Path(OUTPUT_DIR) / "<filename>.json")
+
     print(f"\n{'='*80}")
     print("✅ All files processed!")
     print(f"{'='*80}")
