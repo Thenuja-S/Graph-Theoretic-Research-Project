@@ -205,3 +205,10 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+#CSV files
+csv/*.csv
+
+#remove .json files
+IE-output/*.json
+JSON-output/*.json

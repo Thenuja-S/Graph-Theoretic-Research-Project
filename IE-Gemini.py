@@ -6,15 +6,19 @@ import json
 from pathlib import Path
 import pymupdf
 from tqdm import tqdm
-
+import requests
+import time
+import pymupdf4llm
 
 # Load environment variables from .env file
 load_dotenv()
 
 # set up gemini
 client = genai.Client()
-# model_ID = "gemini-3-pro-preview"
-model_ID = "gemini-2.5-flash"
+model_ID = "gemini-3.1-pro-preview"
+
+SEMANTIC_URL = "https://api.semanticscholar.org/graph/v1/paper/search"
+session = requests.Session()
 
 SCHEMA = {
     "type": "object",
@@ -77,8 +81,11 @@ SCHEMA = {
                         "minLength": 0
                     },
                     "Authors": {
-                        "type": "string",
-                        "minLength": 0
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "minLength": 1
+                        }
                     },
                     "PublicationYear": {
                         "type": "string",
@@ -89,8 +96,11 @@ SCHEMA = {
                         "minLength": 0
                     },
                     "Editors": {
-                        "type": "string",
-                        "minLength": 0
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "minLength": 1
+                        }
                     },
                     "Publisher": {
                         "type": "string",
@@ -130,7 +140,7 @@ def clean_schema(schema: dict) -> dict:
 
 def read_prompt(prompt_path: str):
     #  Read the prompt for research paper parsing from the text file.
-  with open(prompt_path, "r") as f:
+  with open(prompt_path, "r", encoding='utf-8') as f:
     return f.read()
 
 def extract_text_from_pdf(pdf_path: str):
@@ -143,6 +153,13 @@ def extract_text_from_pdf(pdf_path: str):
         pages.append(page.get_text("text"))
     doc.close()
     return "\n".join(pages)
+
+def extract_markdown_from_pdf(pdf_path: str) -> str:
+    try:
+        # The to_markdown function does the heavy lifting
+        return pymupdf4llm.to_markdown(pdf_path)
+    except Exception as e:
+        raise ValueError(f"Error converting PDF to markdown: {e}")
 
 def clean_newlines(data):
     if isinstance(data, dict):
@@ -158,7 +175,7 @@ def clean_newlines(data):
 
 def processing_pdf_paper(pdf_path: str, prompt_path: str, output_path: str = None):
     #Step 1: Extract text content from the PDF
-    content = extract_text_from_pdf(pdf_path)
+    content = extract_markdown_from_pdf(pdf_path)
 
     #Read the prompt
     prompt_data = read_prompt(prompt_path)
@@ -194,7 +211,25 @@ def processing_pdf_paper(pdf_path: str, prompt_path: str, output_path: str = Non
         print(f"Error: Failed to decode JSON response from Gemini: {result.text[:100]}...")
         return 
     
-
+    # --- Check and fill missing DOI for main paper ---
+    if not response_data.get("DOI") or response_data.get("DOI").strip() == "":
+        print(f"DOI is empty for main paper. Searching using Semantic Scholar API...")
+        found_doi = find_doi_semantic_scholar(response_data.get("PaperTitle", ""), response_data.get("PublicationYear", ""))
+        if found_doi:
+            response_data["DOI"] = found_doi
+    
+    # --- Check and fill missing DOI for references ---
+    if "References" in response_data and isinstance(response_data["References"], list):
+        for ref in response_data["References"]:
+            if not ref.get("DOI") or ref.get("DOI").strip() == "":
+                ref_title = ref.get("PaperTitle", "")
+                if ref_title:
+                    print(f"DOI is empty for reference: {ref_title}. Searching...")
+                    time.sleep(5)  # Sleep briefly to avoid hitting rate limits
+                    found_doi = find_doi_semantic_scholar(ref_title, ref.get("PublicationYear", ""))
+                    if found_doi:
+                        ref["DOI"] = found_doi
+    
     # --- 3. Determine Output Path ---
     pdf_base_name = os.path.splitext(os.path.basename(pdf_path))[0]
     output_filename = f"{pdf_base_name}_gemini.json"
@@ -219,10 +254,60 @@ def count_references_in_output(output_file: str):
         count = len(data["References"])
         print("Number of references objects:", count)
 
+def find_doi_semantic_scholar(paper_title: str, publication_year: str = None, retries: int = 3) -> str:
+    if not paper_title or not paper_title.strip():
+        return ""
+    
+    headers = {
+        "x-api-key": os.getenv("SEMANTIC_API_KEY", "")
+    }
+    params = {
+        "query": paper_title,
+        "fields": "title,year,externalIds",
+    }
+
+    for attempt in range(retries):
+        try:
+            response = session.get(SEMANTIC_URL, params=params, timeout=30, headers=headers)
+            if response.status_code == 429:
+                retry_after = response.headers.get("Retry-After")
+
+                if retry_after and retry_after.isdigit():
+                    wait_time = int(retry_after)
+                else:
+                    wait_time = min(1 ** attempt, 30)  # true exponential backoff
+
+                print(f"Rate limited (429). Waiting {wait_time} seconds before retrying...")
+                time.sleep(wait_time)
+                continue
+                
+            response.raise_for_status()
+            search_results = response.json()
+
+            # The search API returns a dictionary with a "data" list
+            papers = search_results.get("data", [])
+            if not papers:
+                print(f"No results found for: {paper_title}")
+                return ""
+
+            paper = papers[0] 
+            doi = paper.get('externalIds', {}).get('DOI') if paper.get('externalIds') else ""
+
+            if doi:
+                print(f"Found DOI {doi} for paper: {paper_title}")
+                return doi
+            
+            return "" 
+
+        except requests.exceptions.RequestException as e:
+            print(f"API request error for '{paper_title}': {e}")
+            break 
+            
+    return ""
 
 
 if __name__ == "__main__":
-    pdf_path = "./papers/Graph_Embedding_for_Mapping_Interdisciplinary_Research_Network.pdf"
+    pdf_path = "./papers/<PDF_FILE_NAME>.pdf"
     prompt_path = "./prompts/information_extraction_prompt.txt"
     output_path = "./IE-output"
     processing_pdf_paper(pdf_path, prompt_path, output_path)
